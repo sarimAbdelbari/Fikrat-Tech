@@ -71,7 +71,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/10 backdrop-blur-md border border-purple-300/30 text-[#dcc5f8] text-sm font-medium mb-8"
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
           >
             {/* Static "stars" icon */}
             <svg
@@ -102,7 +102,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#dcc5f8] leading-tight mb-4 sm:mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#e9d8fd] leading-tight mb-4 sm:mb-6"
           >
             You Imagine.{' '}
             <motion.span 
@@ -138,7 +138,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-base sm:text-lg lg:text-xl text-[#ab9eba] leading-relaxed mb-8 sm:mb-12 max-w-4xl mx-auto font-medium px-2"
+            className="text-base sm:text-lg lg:text-xl text-[#c4b5fd] leading-relaxed mb-8 sm:mb-12 max-w-4xl mx-auto font-medium px-2"
           >
             Ideas are the seeds of change. At Fikrat.tech, we believe no idea is too small to matter. We're not just coders — we're{' '}
             <motion.span
@@ -170,7 +170,7 @@ const Hero = () => {
               style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
             >
               <span className="relative z-10 flex items-center gap-2">
-                Share Your Idea
+                Start Your Project
                 <motion.div
                   initial={{ x: 0 }}
                   whileHover={{ x: 4 }}

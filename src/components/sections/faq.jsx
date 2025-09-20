@@ -38,6 +38,14 @@ const Faq = () => {
     {
       question: "How do you ensure quality?",
       answer: "We follow industry best practices, conduct thorough testing, use modern development workflows, and obsess over details. Every line of code and every pixel is crafted with love and attention to quality."
+    },
+    {
+      question: "Do you follow web accessibility and performance standards?",
+      answer: "Absolutely! All our websites are WCAG AA compliant for accessibility, achieve sub-3-second load times, and follow Core Web Vitals best practices. We build products that work for everyone, everywhere."
+    },
+    {
+      question: "What makes you different from other agencies?",
+      answer: "We're not just an agency - we're your technical co-founders. While others build and disappear, we obsess over your success, balance beautiful design with technical excellence, and stay with you through growth and evolution."
     }
   ]
 

@@ -177,7 +177,7 @@ const WhatWeDo = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`absolute  left-1 px-3 py-1 rotate-180 rounded-full ${service.badgeColor} backdrop-blur-sm border border-purple-300/30 text-xs font-semibold text-[#dcc5f8]`}
+                className={`absolute  left-3 px-3 py-1  rounded-full ${service.badgeColor} backdrop-blur-sm border border-purple-300/30 text-xs font-semibold text-[#dcc5f8]`}
               >
                 {service.badge}
               </motion.div>

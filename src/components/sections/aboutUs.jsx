@@ -108,6 +108,48 @@ const AboutUs = () => {
           />
         </motion.div>
 
+        {/* Professional Credentials */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="max-w-5xl mx-auto mb-16"
+        >
+          <div className="bg-slate-800/40 backdrop-blur-md rounded-2xl p-8 border border-purple-300/10">
+            <h3 className="text-2xl font-bold text-[#e9d8fd] mb-6 text-center">Technical Expertise & Standards</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="space-y-2">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-[#c4b5fd]">WCAG AA Compliant</h4>
+                <p className="text-sm text-[#9f7aea]">Accessibility-first development ensuring your product reaches everyone</p>
+              </div>
+              <div className="space-y-2">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-[#c4b5fd]">Performance Optimized</h4>
+                <p className="text-sm text-[#9f7aea]">Sub-3-second load times and Core Web Vitals excellence</p>
+              </div>
+              <div className="space-y-2">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-[#c4b5fd]">Enterprise Security</h4>
+                <p className="text-sm text-[#9f7aea]">Industry-standard security practices and data protection</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Stats Grid */}
         <motion.div
           initial={{ opacity: 0 }}

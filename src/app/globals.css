@@ -16,10 +16,10 @@
   --background-nav: rgba(15, 15, 26, 0); /* Transparent Dark Nav */
   --background-nav-scrolled: rgba(15, 23, 42, 0.8); /* Dark Nav When Scrolled */
   
-  /* Text Colors */
-  --text-primary: #dcc5f8;   /* Light Purple Primary Text */
-  --text-secondary: #ab9eba; /* Muted Purple Secondary Text */
-  --text-muted: #77638f;     /* Muted Purple Text */
+  /* Text Colors - Enhanced for WCAG AA Compliance */
+  --text-primary: #e9d8fd;   /* Lighter Purple Primary Text (AA compliant) */
+  --text-secondary: #c4b5fd; /* Improved contrast Purple Secondary Text */
+  --text-muted: #9f7aea;     /* Better contrast Muted Purple Text */
   --text-inverse: #FFFFFF;   /* White Text */
   
   /* Border Colors */
