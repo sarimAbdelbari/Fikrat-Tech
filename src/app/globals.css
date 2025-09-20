@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* Light Mode (Default) */
+:root {
+  /* Brand Colors - Updated to match Hero/Navbar */
+  --primary: #8c3eee;        /* Primary Purple from gradient */
+  --primary-light: #dcc5f8;  /* Light Purple for text */
+  --primary-dark: #6923c5;   /* Dark Purple */
+  --secondary: #77638f;      /* Muted Purple for secondary text */
+  --accent: #a855f7;         /* Accent Purple from gradient */
+  
+  /* Background Colors */
+  --background: #0F0F1A;     /* Dark Background matching hero */
+  --background-alt: #1A1A2E; /* Alternative Dark Background */
+  --background-card: #16213E; /* Dark Card Background */
+  --background-nav: rgba(15, 15, 26, 0); /* Transparent Dark Nav */
+  --background-nav-scrolled: rgba(15, 23, 42, 0.8); /* Dark Nav When Scrolled */
+  
+  /* Text Colors */
+  --text-primary: #dcc5f8;   /* Light Purple Primary Text */
+  --text-secondary: #ab9eba; /* Muted Purple Secondary Text */
+  --text-muted: #77638f;     /* Muted Purple Text */
+  --text-inverse: #FFFFFF;   /* White Text */
+  
+  /* Border Colors */
+  --border-light: rgba(220, 197, 248, 0.1);   /* Light Purple Border */
+  --border-medium: rgba(220, 197, 248, 0.2);  /* Medium Purple Border */
+  --border-accent: rgba(140, 62, 238, 0.3); /* Accent Purple Border */
+  
+  /* Shadow Colors */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 20px 40px rgba(140, 62, 238, 0.3);
+  
+  /* Additional Theme Variables */
+  --gradient-primary: linear-gradient(135deg, #8c3eee 0%, #a855f7 100%);
+  --gradient-primary-reverse: linear-gradient(135deg, #a855f7 0%, #8c3eee 100%);
+  --gradient-text: linear-gradient(to right, #ab9eba, #dcc5f8);
+  --background-grid: linear-gradient(rgba(140,62,238,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(140,62,238,0.1) 1px, transparent 1px);
+  
+  /* Legacy variables for compatibility */
+  --foreground: var(--text-primary);
+}
+
+/* Dark Mode - Same as default since we're using dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Inherits the same values as light mode since we're using a dark theme by default */
+  }
+}
+
+/* Manual Dark Mode Class Override - inherits default */
+[data-theme="dark"] {
+  /* Inherits the same values as default since we're using a dark theme by default */
+}
+
+/* Manual Light Mode Class Override */
+[data-theme="light"] {
+  /* Background Colors - Light */
+  --background: #FFFFFF;
+  --background-alt: #F8F8F8;
+  --background-card: #FFFFFF;
+  --background-nav: rgba(255, 255, 255, 0);
+  --background-nav-scrolled: rgba(31, 31, 43, 0.95);
+  
+  /* Text Colors - Light */
+  --text-primary: #2E2E2E;
+  --text-secondary: #9A9A9A;
+  --text-muted: #6B7280;
+  --text-inverse: #FFFFFF;
+  
+  /* Border Colors - Light */
+  --border-light: #E5E7EB;
+  --border-medium: #D1D5DB;
+  --border-accent: rgba(152, 67, 221, 0.2);
+  
+  /* Shadow Colors - Light */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-accent: 0 10px 25px rgba(152, 67, 221, 0.3);
+  
+  /* Legacy */
+  --foreground: var(--text-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-background-card: var(--background-card);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+  --color-border-light: var(--border-light);
+  --color-border-medium: var(--border-medium);
+  --color-border-accent: var(--border-accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Base Body Styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth Transitions for Theme Changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Utility Classes for Theme-Aware Components */
+.bg-theme {
+  background-color: var(--background);
+}
+
+.bg-theme-alt {
+  background-color: var(--background-alt);
+}
+
+.bg-theme-card {
+  background-color: var(--background-card);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.text-theme-muted {
+  color: var(--text-muted);
+}
+
+.border-theme {
+  border-color: var(--border-light);
+}
+
+.border-theme-accent {
+  border-color: var(--border-accent);
+}
+
+/* Additional utility classes for the new theme */
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-primary-reverse {
+  background: var(--gradient-primary-reverse);
+}
+
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-grid-pattern {
+  background-image: var(--background-grid);
+  background-size: 100px 100px;
+}
+
+.shadow-accent {
+  box-shadow: var(--shadow-accent);
+}
+
+.border-purple-soft {
+  border-color: var(--border-light);
+}
+
+.border-purple-medium {
+  border-color: var(--border-medium);
+}
