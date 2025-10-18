@@ -14,12 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Fikrat.tech - Digital Product Agency | You Imagine. We Build.",
-  description: "Transform your ideas into digital reality. Professional web development, mobile apps, and digital solutions for entrepreneurs and visionaries. WCAG compliant, performance optimized.",
+  title: "Fikrat Digital Product Agency | You Imagine. We Build.",
+  description: "Transform your ideas into digital reality. Professional web development, mobile apps, and digital solutions for entrepreneurs and visionaries.",
   keywords: "digital agency, web development, mobile apps, startup technology, digital products, accessible development, performance optimization",
-  authors: [{ name: "Fikrat.tech" }],
-  creator: "Fikrat.tech",
-  publisher: "Fikrat.tech",
+  authors: [{ name: "Fikrat Tech" }],
+  icons: {
+    icon: '/assets/4.png',
+  },
+  creator: "Fikrat Tech",
+  publisher: "Fikrat Tech",
   formatDetection: {
     email: false,
     address: false,
@@ -27,7 +30,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://fikrat.tech'),
   openGraph: {
-    title: "Fikrat.tech - Digital Product Agency",
+    title: "Fikrat Tech - Digital Product Agency",
     description: "Transform your ideas into digital reality with professional development services.",
     url: 'https://fikrat.tech',
     siteName: 'Fikrat.tech',

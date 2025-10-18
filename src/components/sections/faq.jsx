@@ -11,10 +11,10 @@ const Faq = () => {
       question: "How long does it take to get a prototype?",
       answer: "For a basic prototype, we typically deliver within 1-2 weeks. For more complex MVPs, it usually takes 4-6 weeks. We move at startup speed and keep you updated throughout the entire process."
     },
-    {
-      question: "What's the typical budget for an MVP?",
-      answer: "MVP projects typically range from $5,000 to $25,000 depending on complexity, features, and design requirements. We provide transparent pricing upfront and work within your budget to deliver maximum value."
-    },
+    // {
+    //   question: "What's the typical budget for an MVP?",
+    //   answer: "MVP projects typically range from $5,000 to $25,000 depending on complexity, features, and design requirements. We provide transparent pricing upfront and work within your budget to deliver maximum value."
+    // },
     {
       question: "Will I own the code and design?",
       answer: "Absolutely! You own 100% of the code, design files, and intellectual property. No vendor lock-in, no hidden dependencies. Everything we create belongs to you from day one."
@@ -93,6 +93,38 @@ const Faq = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
+          >
+            {/* Question mark icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 28 28"
+              fill="none"
+              className="w-7 h-7 mr-3"
+            >
+              <g>
+                <circle cx="14" cy="14" r="7" fill="#b794f4" fillOpacity="0.25"/>
+                <path
+                  d="M14 11C14 9.5 15 8.5 16 8.5C17 8.5 18 9.5 18 10.5C18 11.5 17.5 12 16.5 12.5C15.5 13 14.5 13.5 14.5 14.5"
+                  stroke="#d1b3ff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <circle cx="14.5" cy="17.5" r="0.8" fill="#d1b3ff"/>
+                <circle cx="10" cy="8" r="0.6" fill="#e9d8fd"/>
+                <circle cx="20" cy="19" r="0.5" fill="#e9d8fd"/>
+              </g>
+            </svg>
+            Your Questions Matter
+          </motion.div>
+
           <motion.h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#dcc5f8] mb-4 sm:mb-6"
           >
@@ -138,7 +170,7 @@ const Faq = () => {
               <div className="bg-purple-500/5 backdrop-blur-md rounded-2xl border border-purple-300/20 hover:border-purple-300/40 transition-all duration-300 overflow-hidden">
                 <motion.button
                   onClick={() => toggleFaq(index)}
-                  className="w-full text-left p-6 flex items-center justify-between group-hover:bg-purple-500/5 transition-colors duration-300"
+                  className="w-full text-left p-6 cursor-pointer flex items-center justify-between group-hover:bg-purple-500/5 transition-colors duration-300"
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -207,7 +239,7 @@ const Faq = () => {
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            className="text-white px-10 py-4 rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
+            className="text-white px-10 py-4 cursor-pointer rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
             style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
           >
             <span className="relative z-10">Get In Touch</span>

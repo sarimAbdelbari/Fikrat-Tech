@@ -10,15 +10,26 @@ const Hero = () => {
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(140,62,238,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(140,62,238,0.1)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
-        {/* Animated Background Image */}
+        
+        {/* Mobile Background Image */}
+        <Image
+          src="/assets/images/MobileVersion.png"
+          alt="Mobile Background"
+          fill
+          className="object-cover opacity-20 md:hidden"
+          priority
+        />
+        
+        {/* Desktop Animated Background Image */}
         <Image
           src="/assets/images/fikrat_background_animated.gif"
           alt="Animated Background"
           fill
-          className="object-cover opacity-20"
+          className="hidden md:block object-cover opacity-20"
           priority
           unoptimized
         />
+        
         {/* Elegant overlay */}
         <div className="absolute inset-0 bg-black/10"></div>
       </div>
@@ -166,11 +177,11 @@ const Hero = () => {
                 boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 rounded-lg text-white font-semibold text-lg overflow-hidden transition-all duration-300 shadow-xl"
+              className="group relative px-8 py-4 cursor-pointer rounded-lg text-white font-semibold text-lg overflow-hidden transition-all duration-300 shadow-xl"
               style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
             >
               <span className="relative z-10 flex items-center gap-2">
-                Start Your Project
+                Book Your Free Call
                 <motion.div
                   initial={{ x: 0 }}
                   whileHover={{ x: 4 }}
@@ -192,7 +203,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group px-8 py-4 rounded-lg text-lg font-semibold text-[#dcc5f8] border-2 border-purple-300/20 hover:bg-purple-500/10 hover:border-purple-300/40 transition-all duration-300 backdrop-blur flex items-center gap-2"
+              className="group px-8 py-4 rounded-lg cursor-pointer text-lg font-semibold text-[#dcc5f8] border-2 border-purple-300/20 hover:bg-purple-500/10 hover:border-purple-300/40 transition-all duration-300 backdrop-blur flex items-center gap-2"
             >
               See Our Work
               <motion.div

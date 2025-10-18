@@ -117,7 +117,7 @@ We don’t just build products — we build belief. At Fikrat.tech, our role is 
 
 Have an idea and want to build with us?
 
-📧 Email: hello@fikrat.tech  
+📧 Email: contact@fikrat.tech  
 🌐 Website: [https://fikrat.tech](https://fikrat.tech)
 
 ---

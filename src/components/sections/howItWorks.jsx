@@ -104,6 +104,34 @@ const HowItWorks = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
+          >
+            {/* Flow/Process icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 28 28"
+              fill="none"
+              className="w-7 h-7 mr-3"
+            >
+              <g>
+                <circle cx="14" cy="14" r="7" fill="#b794f4" fillOpacity="0.25"/>
+                <circle cx="8" cy="14" r="2.5" stroke="#d1b3ff" strokeWidth="1.5" fill="none"/>
+                <circle cx="20" cy="14" r="2.5" stroke="#d1b3ff" strokeWidth="1.5" fill="none"/>
+                <path d="M10.5 14H17.5" stroke="#d1b3ff" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M18.5 12L21 14L18.5 16" stroke="#d1b3ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                <circle cx="8" cy="8" r="0.6" fill="#e9d8fd"/>
+                <circle cx="20" cy="20" r="0.5" fill="#e9d8fd"/>
+              </g>
+            </svg>
+            From Vision to Reality
+          </motion.div>
+
           <motion.h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#dcc5f8] mb-4 sm:mb-6"
           >
@@ -228,10 +256,10 @@ const HowItWorks = () => {
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            className="group relative text-white px-10 py-4 rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden"
+            className="group relative text-white cursor-pointer px-10 py-4 rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
           >
-            <span className="relative z-10">Start Your Journey</span>
+            <span className="relative z-10">Book Your Free Call</span>
             <motion.div
               className="absolute inset-0"
               style={{ background: 'linear-gradient(135deg, #a855f7 0%, #8c3eee 100%)' }}

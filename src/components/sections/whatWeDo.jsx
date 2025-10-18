@@ -122,6 +122,45 @@ const WhatWeDo = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
+          >
+            {/* Tools/Craft icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 28 28"
+              fill="none"
+              className="w-7 h-7 mr-3"
+            >
+              <g>
+                <circle cx="14" cy="14" r="7" fill="#b794f4" fillOpacity="0.25"/>
+                <path
+                  d="M10 9L14 5L18 9M14 5V16"
+                  stroke="#d1b3ff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <path
+                  d="M19 18L14 23L9 18M14 23V19"
+                  stroke="#d1b3ff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <circle cx="14" cy="14" r="2" fill="#d1b3ff"/>
+                <circle cx="8" cy="8" r="0.7" fill="#e9d8fd"/>
+                <circle cx="20" cy="20" r="0.6" fill="#e9d8fd"/>
+              </g>
+            </svg>
+            Crafting Digital Experiences
+          </motion.div>
+
           <motion.h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#dcc5f8] mb-4 sm:mb-6"
           >
@@ -274,7 +313,7 @@ const WhatWeDo = () => {
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            className="group relative text-white px-10 py-5 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
+            className="group relative cursor-pointer text-white px-10 py-5 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
           >
             <span className="relative z-10">Start Your Vision Call</span>

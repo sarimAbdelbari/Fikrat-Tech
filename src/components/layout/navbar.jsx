@@ -90,6 +90,7 @@ const Navbar = () => {
               alt="Fikrat.tech - Digital Product Agency" 
               width={170} 
               height={170}
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-[170px] md:h-[170px]"
             />
           </motion.div>
 
@@ -143,10 +144,10 @@ const Navbar = () => {
                 boxShadow: '0 20px 40px rgba(140, 62, 238, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="relative px-6 py-2.5 rounded-lg text-white font-semibold text-sm overflow-hidden transition-all duration-300 shadow-lg"
+              className="relative px-6 py-2.5 cursor-pointer rounded-lg text-white font-semibold text-sm overflow-hidden transition-all duration-300 shadow-lg"
               style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
             >
-              <span className="relative z-10">Start Project</span>
+              <span className="relative z-10">Book Your Free Call</span>
               <motion.div
                 className="absolute inset-0"
                 style={{ background: 'linear-gradient(135deg, #a855f7 0%, #8c3eee 100%)' }}
@@ -162,7 +163,7 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 rounded-lg transition-colors duration-200 ${
+              className={`p-2 cursor-pointer rounded-lg transition-colors duration-200 ${
                 isScrolled 
                   ? 'text-[#dcc5f8] hover:bg-purple-500/10' 
                   : 'text-[#ab9eba] hover:bg-purple-500/5'
@@ -240,7 +241,7 @@ const Navbar = () => {
                 >
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="w-full px-4 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-white"
+                    className="w-full px-4 py-3 rounded-lg cursor-pointer font-semibold hover:shadow-lg transition-all duration-300 text-white"
                     style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

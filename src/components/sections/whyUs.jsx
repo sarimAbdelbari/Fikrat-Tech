@@ -113,6 +113,37 @@ const WhyUs = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
+          >
+            {/* Star with sparkle icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 28 28"
+              fill="none"
+              className="w-7 h-7 mr-3"
+            >
+              <g>
+                <circle cx="14" cy="14" r="7" fill="#b794f4" fillOpacity="0.25"/>
+                <path
+                  d="M14 6L15.5 12L21.5 13.5L15.5 15L14 21L12.5 15L6.5 13.5L12.5 12L14 6Z"
+                  fill="#d1b3ff"
+                  stroke="#d1b3ff"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+                <path d="M8 8L9 10L11 11L9 12L8 14L7 12L5 11L7 10L8 8Z" fill="#e9d8fd"/>
+                <path d="M20 7L20.5 8.5L22 9L20.5 9.5L20 11L19.5 9.5L18 9L19.5 8.5L20 7Z" fill="#e9d8fd"/>
+              </g>
+            </svg>
+            Excellence in Every Detail
+          </motion.div>
+
           <motion.h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#dcc5f8] mb-4 sm:mb-6"
           >
@@ -241,7 +272,7 @@ const WhyUs = () => {
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            className="text-white px-10 py-4 rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
+            className="text-white px-10 py-4 cursor-pointer rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
             style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
           >
             <span className="relative z-10">Experience the Difference</span>

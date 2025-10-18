@@ -6,12 +6,12 @@ import { Brain, Lightbulb, Target, Rocket } from 'lucide-react'
 const AboutUs = () => {
   const stats = [
     {
-      number: "50+",
+      number: "20+",
       label: "Ideas Turned Real",
       icon: Lightbulb
     },
     {
-      number: "3+",
+      number: "2+",
       label: "Years of Crafting",
       icon: Brain
     },
@@ -29,7 +29,7 @@ const AboutUs = () => {
 
   const values = [
     {
-      title: "Ideas are Sacred",
+      title: "Ideas are Valuable",
       description: "Every idea deserves respect, attention, and the chance to become reality. We treat your vision with the reverence it deserves."
     },
     {
@@ -71,6 +71,37 @@ const AboutUs = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center items-center w-fit mx-auto px-4 py-1.5 rounded-full bg-purple-500/15 backdrop-blur-md border border-purple-300/40 text-[#e9d8fd] text-sm font-medium mb-8"
+          >
+            {/* Heart icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 28 28"
+              fill="none"
+              className="w-7 h-7 mr-3"
+            >
+              <g>
+                <circle cx="14" cy="14" r="7" fill="#b794f4" fillOpacity="0.25"/>
+                <path
+                  d="M14 20.5L8.5 15C6.5 13 6.5 9.8 8.5 7.8C10.5 5.8 13.5 5.8 14 6.5C14.5 5.8 17.5 5.8 19.5 7.8C21.5 9.8 21.5 13 19.5 15L14 20.5Z"
+                  fill="#d1b3ff"
+                  stroke="#d1b3ff"
+                  strokeWidth="1.2"
+                  strokeLinejoin="round"
+                />
+                <circle cx="9" cy="9" r="0.8" fill="#e9d8fd"/>
+                <circle cx="19" cy="9" r="0.6" fill="#e9d8fd"/>
+              </g>
+            </svg>
+            Building Dreams Together
+          </motion.div>
+
           <motion.h2 
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#dcc5f8] mb-4 sm:mb-6"
           >
@@ -125,8 +156,8 @@ const AboutUs = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h4 className="font-semibold text-[#c4b5fd]">WCAG AA Compliant</h4>
-                <p className="text-sm text-[#9f7aea]">Accessibility-first development ensuring your product reaches everyone</p>
+                <h4 className="font-semibold text-[#c4b5fd]">SEO Optimized</h4>
+                <p className="text-sm text-[#9f7aea]">SEO optimized development ensuring your product reaches everyone</p>
               </div>
               <div className="space-y-2">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-3">
@@ -134,7 +165,7 @@ const AboutUs = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
                 </div>
-                <h4 className="font-semibold text-[#c4b5fd]">Performance Optimized</h4>
+                <h4 className="font-semibold text-[#c4b5fd]">Performance Enhanced</h4>
                 <p className="text-sm text-[#9f7aea]">Sub-3-second load times and Core Web Vitals excellence</p>
               </div>
               <div className="space-y-2">
@@ -256,10 +287,10 @@ const AboutUs = () => {
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
             }}
             whileTap={{ scale: 0.95 }}
-            className="text-white px-10 py-4 rounded-lg text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
+            className="text-white px-10 py-4 rounded-lg cursor-pointer text-lg font-semibold shadow-xl transition-all duration-300 overflow-hidden relative"
             style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
           >
-            <span className="relative z-10">Join Our Mission</span>
+            <span className="relative z-10">Book Your Free Call</span>
             <motion.div
               className="absolute inset-0"
               style={{ background: 'linear-gradient(135deg, #a855f7 0%, #8c3eee 100%)' }}
