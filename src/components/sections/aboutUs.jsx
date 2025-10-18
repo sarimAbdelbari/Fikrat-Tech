@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Brain, Lightbulb, Target, Rocket } from 'lucide-react'
+import { smoothScrollToSection } from '@/lib/utils'
 
 const AboutUs = () => {
   const stats = [
@@ -282,6 +283,7 @@ const AboutUs = () => {
           </blockquote>
           
           <motion.button
+            onClick={() => smoothScrollToSection('#contact')}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'

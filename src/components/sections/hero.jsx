@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { ArrowRight, Sparkles } from 'lucide-react'
+import { smoothScrollToSection } from '@/lib/utils'
 
 const Hero = () => {  
   return (
@@ -172,6 +173,7 @@ const Hero = () => {
           >
             {/* Primary CTA */}
             <motion.button
+              onClick={() => smoothScrollToSection('#contact')}
               whileHover={{
                 scale: 1.05,
                 boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
@@ -201,11 +203,12 @@ const Hero = () => {
 
             {/* Secondary CTA */}
             <motion.button
+              onClick={() => smoothScrollToSection('#services')}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group px-8 py-4 rounded-lg cursor-pointer text-lg font-semibold text-[#dcc5f8] border-2 border-purple-300/20 hover:bg-purple-500/10 hover:border-purple-300/40 transition-all duration-300 backdrop-blur flex items-center gap-2"
             >
-              See Our Work
+              What We Offer
               <motion.div
                 whileHover={{ rotate: 45 }}
                 transition={{ duration: 0.2 }}

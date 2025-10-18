@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { smoothScrollToSection } from '@/lib/utils'
 
 const WhatWeDo = () => {
   const services = [
@@ -308,6 +309,7 @@ const WhatWeDo = () => {
           className="text-center mt-20"
         >
           <motion.button
+            onClick={() => smoothScrollToSection('#contact')}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'

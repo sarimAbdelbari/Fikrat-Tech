@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Plus, Minus } from 'lucide-react'
+import { smoothScrollToSection } from '@/lib/utils'
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null)
@@ -234,6 +235,7 @@ const Faq = () => {
           </p>
           
           <motion.button
+            onClick={() => smoothScrollToSection('#contact')}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'

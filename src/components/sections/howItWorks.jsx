@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { MessageCircle, Lightbulb, Rocket, TrendingUp } from 'lucide-react'
+import { smoothScrollToSection } from '@/lib/utils'
 
 const HowItWorks = () => {
   const steps = [
@@ -251,6 +252,7 @@ const HowItWorks = () => {
           className="text-center mt-16"
         >
           <motion.button
+            onClick={() => smoothScrollToSection('#contact')}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 20px 40px rgba(140, 62, 238, 0.4)'
