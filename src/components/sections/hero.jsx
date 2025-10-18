@@ -6,7 +6,7 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 
 const Hero = () => {  
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(140,62,238,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(140,62,238,0.1)_1px,transparent_1px)] bg-[size:100px_100px]"></div>

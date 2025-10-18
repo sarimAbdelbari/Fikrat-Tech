@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body {
+  scroll-behavior: smooth;
+}
 /* Light Mode (Default) */
 :root {
   /* Brand Colors - Updated to match Hero/Navbar */

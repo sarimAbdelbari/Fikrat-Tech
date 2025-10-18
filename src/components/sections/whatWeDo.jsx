@@ -86,7 +86,7 @@ const WhatWeDo = () => {
   }
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-slate-900 via-purple-900/30 to-slate-900 overflow-hidden">
+    <section id="services" className="relative py-24 bg-gradient-to-br from-slate-900 via-purple-900/30 to-slate-900 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(140,62,238,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(140,62,238,0.1)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
