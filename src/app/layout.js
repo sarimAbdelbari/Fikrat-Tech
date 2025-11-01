@@ -55,8 +55,45 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Fikrat Tech',
+    url: 'https://fikrat.tech',
+    logo: 'https://fikrat.tech/assets/Fikrat%20Tech%20(2).png',
+    description: 'Transform your ideas into digital reality. Professional web development, mobile apps, and digital solutions for entrepreneurs and visionaries.',
+    email: 'contact@fikrat.tech',
+    sameAs: [
+      'https://www.instagram.com/fikrat.tech',
+      'https://www.facebook.com/fikrat.tech',
+      'https://www.linkedin.com/company/fikrat-tech',
+      'https://twitter.com/fikrat_tech'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+92-317-0101666',
+      contactType: 'Customer Service',
+      availableLanguage: ['English']
+    },
+    areaServed: 'Worldwide',
+    serviceType: [
+      'Web Development',
+      'Mobile App Development',
+      'UI/UX Design',
+      'MVP Development',
+      'Prototype Development',
+      'Brand Identity'
+    ]
+  }
+
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
