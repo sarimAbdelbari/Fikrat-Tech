@@ -96,7 +96,7 @@ const Navbar = () => {
       animate={isScrolled ? 'scrolled' : 'initial'}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'border-b border-purple-300/20 shadow-2xl bg-slate-900/80 backdrop-blur-lg' 
+          ? 'border-b border-purple-300/20 shadow-2xl bg-slate-900/60 backdrop-blur-sm' 
           : 'border-b border-transparent bg-transparent'
       }`}
     >
