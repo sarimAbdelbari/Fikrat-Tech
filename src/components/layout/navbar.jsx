@@ -1,306 +1,161 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname } from '@/i18n/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { buildWaLink } from '@/lib/config'
+import LanguageSwitcher from '@/components/layout/languageSwitcher'
 
 const Navbar = () => {
+  const t = useTranslations('nav')
+  const tWa = useTranslations('whatsapp')
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false)
+  const pathname = usePathname()
 
-  // Handle scroll effect
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Primary navigation items
-  const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
-  ]
-
-  // Additional links for "More" dropdown
-  const moreItems = [
-    { name: 'Why Us', href: '#why-us' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'FAQ', href: '#faq' },
-  ]
-
-  const handleNavClick = (e, href) => {
-    e.preventDefault()
-    const element = document.querySelector(href)
-    if (element) {
-      const offset = 80 // Height of navbar
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.pageYOffset - offset
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      })
-    }
+  useEffect(() => {
     setIsMobileMenuOpen(false)
-    setIsMoreDropdownOpen(false)
-  }
+  }, [pathname])
 
-  // Animation variants
-  const navVariants = {
-    initial: { backdropFilter: 'blur(0px)' },
-    scrolled: { 
-      backdropFilter: 'blur(20px)',
-    }
-  }
+  const navItems = [
+    { name: t('services'), href: '/services' },
+    { name: t('work'), href: '/work' },
+    { name: t('packages'), href: '/packages' },
+    { name: t('about'), href: '/about' },
+  ]
+
+  const waHref = buildWaLink(tWa('generic'))
 
   const mobileMenuVariants = {
-    closed: {
-      opacity: 0,
-      height: 0,
-      transition: {
-        duration: 0.3,
-        ease: 'easeInOut'
-      }
-    },
-    open: {
-      opacity: 1,
-      height: 'auto',
-      transition: {
-        duration: 0.3,
-        ease: 'easeInOut'
-      }
-    }
+    closed: { opacity: 0, height: 0, transition: { duration: 0.3, ease: 'easeInOut' } },
+    open: { opacity: 1, height: 'auto', transition: { duration: 0.3, ease: 'easeInOut' } },
   }
 
   const menuItemVariants = {
     closed: { x: -20, opacity: 0 },
-    open: (i) => ({
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.3
-      }
-    })
+    open: (i) => ({ x: 0, opacity: 1, transition: { delay: i * 0.08, duration: 0.3 } }),
   }
 
   return (
-    <motion.nav
-      variants={navVariants}
-      initial="initial"
-      animate={isScrolled ? 'scrolled' : 'initial'}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'border-b border-purple-300/20 shadow-2xl bg-slate-900/50 backdrop-blur-md' 
-          : 'border-b border-transparent bg-transparent'
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-2 ${
+        isScrolled
+          ? 'backdrop-blur-md border-b border-primary-light/10 shadow-2xl'
+          : 'bg-transparent border-b border-transparent'
       }`}
+      style={isScrolled ? { backgroundColor: 'var(--background-nav-scrolled)' } : {}}
     >
-      <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-1.5">
+      <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="flex items-center justify-between h-16 md:h-20">
-          
-          {/* Logo Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex-shrink-0 flex items-center mt-3"
           >
-            <Image 
-              src="/assets/Fikrat Tech (2).png" 
-              alt="Fikrat.tech - Digital Product Agency" 
-              width={170} 
-              height={170}
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-[170px] md:h-[170px]"
-            />
+            <Link href="/" className="flex items-center justify-center">
+              <Image
+                src="/assets/Fikrat Tech (1).png"
+                alt={t('logoAlt')}
+                width={180}
+                height={48}
+                priority
+                className="h-16 md:h-32 w-auto scale-125 translate-y-1"
+              />
+            </Link>
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item, index) => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
+          <div className="hidden md:flex items-center space-x-1">
+            {navItems.map((item, index) => {
+              const isActive = pathname === item.href
+              return (
+                <motion.div
+                  key={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ 
-                    scale: 1.05,
-                    color: '#dcc5f8',
-                    transition: { duration: 0.2 }
-                  }}
-                  style={{
-                    color: '#ab9eba'
-                  }}
-                  className={`px-3 py-2 text-md font-medium transition-all duration-200 relative group cursor-pointer`}
+                  transition={{ duration: 0.5, delay: index * 0.08 }}
                 >
-                  {item.name}
-                  
-                  {/* Animated underline */}
-                  <motion.div
-                    className="absolute bottom-0 left-0 h-0.5"
-                    style={{
-                      background: 'linear-gradient(to right, #ab9eba, #dcc5f8)'
-                    }}
-                    initial={{ width: 0 }}
-                    whileHover={{ width: '100%' }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </motion.a>
-              ))}
-
-              {/* More Dropdown */}
-              <div className="relative">
-                <motion.button
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: navItems.length * 0.1 }}
-                  onClick={() => setIsMoreDropdownOpen(!isMoreDropdownOpen)}
-                  onMouseEnter={() => setIsMoreDropdownOpen(true)}
-                  whileHover={{ 
-                    scale: 1.05,
-                    color: '#dcc5f8',
-                    transition: { duration: 0.2 }
-                  }}
-                  style={{
-                    color: '#ab9eba'
-                  }}
-                  className={`px-3 py-2 text-md font-medium transition-all duration-200 relative group cursor-pointer flex items-center gap-1`}
-                >
-                  More
-                  <motion.div
-                    animate={{ rotate: isMoreDropdownOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
+                  <Link
+                    href={item.href}
+                    className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 group ${
+                      isActive ? 'text-theme-primary' : 'text-secondary hover:text-theme-primary'
+                    }`}
                   >
-                    <ChevronDown size={16} />
-                  </motion.div>
-                  
-                  {/* Animated underline */}
-                  <motion.div
-                    className="absolute bottom-0 left-0 h-0.5"
-                    style={{
-                      background: 'linear-gradient(to right, #ab9eba, #dcc5f8)'
-                    }}
-                    initial={{ width: 0 }}
-                    animate={{ width: isMoreDropdownOpen ? '100%' : 0 }}
-                    whileHover={{ width: '100%' }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </motion.button>
-
-                {/* Dropdown Menu */}
-                <AnimatePresence>
-                  {isMoreDropdownOpen && (
+                    {item.name}
                     <motion.div
-                      initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                      transition={{ duration: 0.2 }}
-                      onMouseLeave={() => setIsMoreDropdownOpen(false)}
-                      className="absolute top-full right-0 mt-2 w-48 bg-slate-900/95 backdrop-blur-lg border border-purple-300/20 rounded-xl shadow-2xl overflow-hidden z-50"
-                    >
-                      {moreItems.map((item, index) => (
-                        <motion.a
-                          key={item.name}
-                          href={item.href}
-                          onClick={(e) => handleNavClick(e, item.href)}
-                          initial={{ opacity: 0, x: -10 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.2, delay: index * 0.05 }}
-                          className="block px-4 py-3 text-[#ab9eba] hover:text-[#dcc5f8] hover:bg-purple-500/10 transition-all duration-200 cursor-pointer"
-                        >
-                          {item.name}
-                        </motion.a>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
+                      className="absolute bottom-0 left-0 h-0.5 rounded-full"
+                      style={{ background: 'var(--gradient-text)' }}
+                      initial={{ width: isActive ? '100%' : 0 }}
+                      animate={{ width: isActive ? '100%' : 0 }}
+                      whileHover={{ width: '100%' }}
+                      transition={{ duration: 0.25 }}
+                    />
+                  </Link>
+                </motion.div>
+              )
+            })}
           </div>
 
-          {/* CTA Button (Desktop) */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden md:block"
+            className="hidden md:flex items-center gap-3"
           >
-            <motion.button
-              onClick={(e) => handleNavClick(e, '#contact')}
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: '0 20px 40px rgba(140, 62, 238, 0.3)'
-              }}
+            <LanguageSwitcher />
+            <motion.a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, boxShadow: '0 16px 32px rgba(140, 62, 238, 0.35)' }}
               whileTap={{ scale: 0.95 }}
-              className="relative px-6 py-2.5 cursor-pointer rounded-lg text-white font-semibold text-sm overflow-hidden transition-all duration-300 shadow-lg"
-              style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
+              className="relative px-5 py-2.5 rounded-lg text-white font-semibold text-sm overflow-hidden shadow-lg block bg-gradient-primary"
             >
-              <span className="relative z-10">Book Your Free Call</span>
+              <span className="relative z-10">{t('bookCall')}</span>
               <motion.div
-                className="absolute inset-0"
-                style={{ background: 'linear-gradient(135deg, #a855f7 0%, #8c3eee 100%)' }}
+                className="absolute inset-0 bg-gradient-primary-reverse"
                 initial={{ x: '100%' }}
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
               />
-            </motion.button>
+            </motion.a>
           </motion.div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher compact />
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 cursor-pointer rounded-lg transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-[#dcc5f8] hover:bg-purple-500/10' 
-                  : 'text-[#ab9eba] hover:bg-purple-500/5'
-              }`}
+              className="p-2 rounded-lg text-secondary hover:text-theme-primary hover:bg-primary/10 transition-colors duration-200"
+              aria-label={t('toggleMenu')}
             >
               <motion.div
                 animate={isMobileMenuOpen ? 'open' : 'closed'}
-                className="w-6 h-6 flex flex-col justify-center items-center"
+                className="w-6 h-6 flex flex-col justify-center items-center gap-1.5"
               >
                 <motion.span
-                  variants={{
-                    closed: { rotate: 0, y: 0 },
-                    open: { rotate: 45, y: 5 }
-                  }}
-                  className={`block h-0.5 w-6 rounded-full transition-colors duration-200 ${
-                    isScrolled ? 'bg-[#dcc5f8]' : 'bg-[#ab9eba]'
-                  }`}
+                  variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: 45, y: 8 } }}
+                  className="block h-0.5 w-6 bg-current rounded-full"
                 />
                 <motion.span
-                  variants={{
-                    closed: { opacity: 1 },
-                    open: { opacity: 0 }
-                  }}
-                  className={`block h-0.5 w-6 mt-1.5 rounded-full transition-colors duration-200 ${
-                    isScrolled ? 'bg-[#dcc5f8]' : 'bg-[#ab9eba]'
-                  }`}
+                  variants={{ closed: { opacity: 1 }, open: { opacity: 0 } }}
+                  className="block h-0.5 w-6 bg-current rounded-full"
                 />
                 <motion.span
-                  variants={{
-                    closed: { rotate: 0, y: 0 },
-                    open: { rotate: -45, y: -5 }
-                  }}
-                  className={`block h-0.5 w-6 mt-1.5 rounded-full transition-colors duration-200 ${
-                    isScrolled ? 'bg-[#dcc5f8]' : 'bg-[#ab9eba]'
-                  }`}
+                  variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: -45, y: -8 } }}
+                  className="block h-0.5 w-6 bg-current rounded-full"
                 />
               </motion.div>
             </motion.button>
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -308,73 +163,53 @@ const Navbar = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="md:hidden border-t border-purple-300/20 bg-slate-900/95 backdrop-blur-lg"
+              className="md:hidden border-t border-primary-light/10 backdrop-blur-lg overflow-hidden"
+              style={{ backgroundColor: 'color-mix(in srgb, var(--background) 95%, transparent)' }}
             >
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {/* Primary Nav Items */}
+              <div className="px-2 pt-3 pb-5 space-y-1">
                 {navItems.map((item, index) => (
-                  <motion.a
-                    key={item.name}
-                    href={item.href}
+                  <motion.div
+                    key={item.href}
                     custom={index}
                     variants={menuItemVariants}
                     initial="closed"
                     animate="open"
-                    onClick={(e) => handleNavClick(e, item.href)}
-                    className="block px-3 py-2 text-[#dcc5f8] hover:text-white text-base font-medium transition-colors duration-200 rounded-lg hover:bg-purple-500/10 cursor-pointer"
                   >
-                    {item.name}
-                  </motion.a>
+                    <Link
+                      href={item.href}
+                      className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors duration-200 ${
+                        pathname === item.href
+                          ? 'text-theme-primary bg-primary/10'
+                          : 'text-secondary hover:text-theme-primary hover:bg-primary/5'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
                 ))}
-                
-                {/* Divider */}
-                <motion.div 
-                  className="h-px bg-purple-300/20 my-2"
+
+                <motion.div
                   custom={navItems.length}
                   variants={menuItemVariants}
                   initial="closed"
                   animate="open"
-                />
-                
-                {/* More Items */}
-                {moreItems.map((item, index) => (
-                  <motion.a
-                    key={item.name}
-                    href={item.href}
-                    custom={navItems.length + index + 1}
-                    variants={menuItemVariants}
-                    initial="closed"
-                    animate="open"
-                    onClick={(e) => handleNavClick(e, item.href)}
-                    className="block px-3 py-2 text-[#ab9eba] hover:text-[#dcc5f8] text-sm font-medium transition-colors duration-200 rounded-lg hover:bg-purple-500/5 cursor-pointer"
-                  >
-                    {item.name}
-                  </motion.a>
-                ))}
-                
-                {/* Mobile CTA */}
-                <motion.div
-                  custom={navItems.length + moreItems.length + 1}
-                  variants={menuItemVariants}
-                  initial="closed"
-                  animate="open"
-                  className="pt-4"
+                  className="pt-3"
                 >
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    onClick={(e) => handleNavClick(e, '#contact')}
-                    className="w-full px-4 py-3 rounded-lg cursor-pointer font-semibold hover:shadow-lg transition-all duration-300 text-white"
-                    style={{ background: 'linear-gradient(135deg, #8c3eee 0%, #a855f7 100%)' }}
+                  <a
+                    href={waHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center px-4 py-3 rounded-lg font-semibold text-white transition-all duration-300 bg-gradient-primary"
                   >
-                    Book Your Free Call
-                  </motion.button>
+                    {t('bookCall')}
+                  </a>
                 </motion.div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.nav>
+    </nav>
   )
 }
 

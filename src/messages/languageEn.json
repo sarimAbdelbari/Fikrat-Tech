@@ -1,0 +1,812 @@
+{
+  "meta": {
+    "titleDefault": "Fikrat DZ | Built for Algeria. Built to Last.",
+    "titleTemplate": "%s | Fikrat DZ",
+    "description": "Fikrat DZ builds complete digital commerce platforms for Algerian businesses — storefronts, Algerian payment integration, order management, and secure delivery systems.",
+    "keywords": "digital commerce Algeria, Chargily integration, Flexy payment, digital storefront Algeria, web development Algeria, ecommerce Algeria, DZD pricing, admin dashboard",
+    "ogTitle": "Fikrat DZ — Digital Commerce Platforms for Algeria",
+    "ogDescription": "Stop managing orders on WhatsApp. Fikrat DZ builds professional digital commerce platforms for Algerian businesses.",
+    "jsonLdDescription": "Complete digital commerce platforms for Algerian businesses — storefronts, Algerian payment integration, order management, and secure delivery systems.",
+    "serviceTypes": {
+      "storefront": "Digital Storefront Development",
+      "payment": "Algerian Payment Integration",
+      "orders": "Order Management Systems",
+      "admin": "Admin Dashboard Development",
+      "chat": "Real-Time Chat Systems",
+      "pwa": "PWA Development"
+    },
+    "home": {
+      "title": "Fikrat DZ | Built for Algeria. Built to Last.",
+      "description": "Stop managing orders on WhatsApp. Fikrat DZ builds professional digital commerce platforms for Algerian businesses — storefronts, Chargily & Flexy integration, order management, and secure delivery."
+    },
+    "about": {
+      "title": "About",
+      "description": "Fikrat DZ is a software agency based in Algeria, specialized in building complete digital commerce platforms for businesses selling products online."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Book a free 30-minute strategy call with Fikrat DZ. Tell us about your business — we'll tell you exactly what you need and what it costs. No pitch, no pressure."
+    },
+    "packages": {
+      "title": "Packages & Pricing",
+      "description": "Three packages for Algerian digital businesses. Boutique Store from 60,000 DZD, Commerce System from 120,000 DZD, Full Platform from 250,000 DZD. Every package ships. No scope creep."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Complete digital commerce infrastructure for Algerian businesses — storefronts, Algerian payment integration, order management, admin dashboards, and real-time chat systems."
+    },
+    "work": {
+      "title": "Work",
+      "description": "Every project Fikrat DZ takes on solves a real problem for a real business. See our work — starting with Paradise Game DZ."
+    },
+    "caseStudy": {
+      "title": "Paradise Game DZ — Case Study",
+      "description": "How Fikrat DZ replaced a fully manual order workflow with a complete digital commerce platform for Paradise Game DZ — one of Algeria's top gaming stores with 50,000+ Facebook followers."
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "packages": "Packages",
+    "about": "About",
+    "contact": "Contact",
+    "bookCall": "Book a Free Call",
+    "logoAlt": "Fikrat Tech",
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "brandName": "Fikrat",
+    "brandSuffix": "DZ",
+    "tagline": "Built for Algeria. Built to Last.",
+    "copyright": "© {year} Fikrat DZ. All rights reserved.",
+    "pages": "Pages",
+    "contactHeading": "Contact",
+    "bookCall": "Book a Free Call"
+  },
+  "a11y": {
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsapp": "Chat on WhatsApp",
+    "scrollToTop": "Scroll to top"
+  },
+  "whatsapp": {
+    "generic": "Hello Fikrat DZ, I'd like to discuss a project.",
+    "boutique": "Hello, I'm interested in the Boutique Store package (60,000 DZD).",
+    "commerce": "Hello, I'm interested in the Commerce System package (120,000 DZD).",
+    "platform": "Hello, I'm interested in the Full Platform package (250,000 DZD).",
+    "services": "Hello, I have a question about your services.",
+    "caseStudy": "Hello, I'd like something similar to what you built for Paradise Game DZ.",
+    "contact": "Hello Fikrat DZ, I'd like to discuss my project."
+  },
+  "common": {
+    "timelineLabel": "Timeline:",
+    "getStarted": "Get Started",
+    "notIncluded": "Not included:",
+    "allPackagesInclude": "All packages include: SEO setup · Mobile-responsive · Admin training · You own all the code.",
+    "bookFreeStrategyCall": "Book a Free Strategy Call",
+    "bookYourFreeStrategyCall": "Book Your Free Strategy Call"
+  },
+  "home": {
+    "hero": {
+      "badge": "Built for Algeria. Built to Last.",
+      "headlinePart1": "Stop Managing Orders",
+      "headlinePart2": "on WhatsApp.",
+      "subheadline": "Fikrat builds professional digital commerce platforms for Algerian businesses — complete storefronts, Algerian payment integration, order management, and secure delivery systems.",
+      "body": "If you're selling digital products through DMs, collecting payments manually, and delivering files one by one — we built the solution for that.",
+      "ctaPrimary": "Book a Free Strategy Call",
+      "ctaSecondary": "See Our Work",
+      "badges": {
+        "payment": "Chargily & Flexy integration",
+        "bilingual": "Arabic / French bilingual",
+        "admin": "Full admin dashboard"
+      }
+    },
+    "socialProof": {
+      "label": "Already trusted by:",
+      "client": "Paradise Game DZ",
+      "stat": "50,000+ followers · Digital Commerce Platform"
+    },
+    "problem": {
+      "badge": "The Problem We Solve",
+      "headlinePart1": "Most Algerian sellers are stuck in",
+      "headlinePart2": "workflows that don't scale.",
+      "body": "This works when you have 10 customers. It breaks when you have 100. We build the systems that replace all of it.",
+      "beforeTitle": "Before Fikrat DZ",
+      "afterTitle": "After Fikrat DZ",
+      "before": {
+        "orders": "Orders via Facebook Messenger or Instagram DMs",
+        "payments": "Payments confirmed by CCP or Flexy screenshots",
+        "delivery": "Files delivered manually, one customer at a time",
+        "visibility": "No visibility — who paid? who received? who's waiting?"
+      },
+      "after": {
+        "storefront": "Professional storefront — customers order themselves",
+        "payments": "Chargily, Flexy & CCP — verified automatically",
+        "delivery": "Secure delivery — instant, tracked, automated",
+        "admin": "Full admin dashboard — orders, revenue, customers"
+      }
+    },
+    "servicesPreview": {
+      "badge": "What We Build",
+      "headlinePart1": "Everything your business needs to",
+      "headlinePart2": "sell online.",
+      "body": "Not a template. Not a plugin. A complete system built around how your business actually works.",
+      "items": {
+        "storefront": {
+          "title": "Digital Storefront",
+          "description": "Professional product catalog with categories, search, and product variations. Pricing in DZD. Built to convert."
+        },
+        "payment": {
+          "title": "Algerian Payment Integration",
+          "description": "Chargily, Flexy, CCP workflow — the payment methods your customers already use. No friction. No international cards required."
+        },
+        "orders": {
+          "title": "Order & Delivery System",
+          "description": "Complete order management, customer accounts, order status tracking, and secure digital delivery — all connected."
+        },
+        "admin": {
+          "title": "Admin Dashboard & Analytics",
+          "description": "Run your entire business from one panel. Products, orders, customers, revenue charts — everything in one place."
+        }
+      },
+      "cta": "See Full Service Details"
+    },
+    "featuredWork": {
+      "badge": "Case Study",
+      "headlinePart1": "We built this for",
+      "headlinePart2": "Paradise Game DZ.",
+      "client": "Paradise Game DZ",
+      "stat": "50,000+ Facebook followers · Gaming & Mobile Services",
+      "paragraph1": "Paradise Game DZ is one of Algeria's top gaming stores with an active, loyal customer base. Before working with us, every order was handled manually through chat. Every payment confirmed by screenshot. Every delivery done one by one.",
+      "paragraph2": "We replaced their entire workflow with a complete digital commerce platform.",
+      "cta": "Read the Full Case Study",
+      "deliveredTitle": "What We Delivered",
+      "delivered": {
+        "storefront": "Bilingual storefront (Arabic + French) with full RTL support",
+        "catalog": "Product catalog with multi-level variations and DZD pricing",
+        "chat": "Chat-integrated ordering system with real-time staff inbox",
+        "admin": "Full admin panel — orders, products, customers, analytics",
+        "roles": "Role-based staff access with per-module permissions",
+        "push": "Web push notifications for order updates"
+      },
+      "liveNote": "It's live. It's processing real orders.",
+      "worksNote": "It works."
+    },
+    "packagesPreview": {
+      "badge": "Pricing",
+      "headlinePart1": "Three packages.",
+      "headlinePart2": "One right one",
+      "headlinePart3": "for you.",
+      "body": "Every package ships. No endless projects, no scope creep.",
+      "mostRequested": "Most Requested",
+      "notSure": "Not sure which fits? Book a free call",
+      "boutique": {
+        "name": "Boutique Store",
+        "tag": "For solo creators & small sellers",
+        "price": "60,000 DZD",
+        "timeline": "2–3 weeks",
+        "features": {
+          "products": "Up to 20 products",
+          "payment": "Chargily or Flexy payment",
+          "delivery": "Secure delivery system",
+          "admin": "Basic admin panel",
+          "support": "30 days post-launch support"
+        }
+      },
+      "commerce": {
+        "name": "Commerce System",
+        "tag": "For growing stores",
+        "price": "120,000 DZD",
+        "timeline": "4–6 weeks",
+        "features": {
+          "products": "Unlimited products & categories",
+          "variations": "Product variations with pricing",
+          "accounts": "Customer accounts & order history",
+          "chat": "Chat-integrated ordering flow",
+          "analytics": "Analytics dashboard",
+          "support": "60 days post-launch support"
+        }
+      },
+      "platform": {
+        "name": "Full Platform",
+        "tag": "For established operations",
+        "price": "250,000 DZD",
+        "timeline": "8–12 weeks",
+        "features": {
+          "chat": "Real-time staff/client chat",
+          "roles": "Role-based admin permissions",
+          "analytics": "Revenue & activity analytics",
+          "bilingual": "Bilingual (AR/FR) + RTL",
+          "pwa": "Push notifications + PWA",
+          "support": "90 days post-launch support"
+        }
+      }
+    },
+    "process": {
+      "badge": "How It Works",
+      "headlinePart1": "From conversation to live platform —",
+      "headlinePart2": "in four steps.",
+      "srOnly": "Remove friction; show transparent steps. From vision to reality in four simple phases.",
+      "steps": {
+        "strategy": {
+          "number": "01",
+          "title": "Strategy Call",
+          "description": "30 minutes. You walk us through your business, your products, your customers, and how you work today. We listen."
+        },
+        "proposal": {
+          "number": "02",
+          "title": "Proposal & Scope",
+          "description": "You receive a detailed scope — deliverables, timeline, and price. No ambiguity. No surprises."
+        },
+        "build": {
+          "number": "03",
+          "title": "Build & Review",
+          "description": "We build your platform with regular checkpoints. You review, test, and request changes at each stage."
+        },
+        "launch": {
+          "number": "04",
+          "title": "Launch & Support",
+          "description": "We launch your platform, train you on the admin panel, and stay available for your first month."
+        }
+      },
+      "cta": "Book Your Free Strategy Call"
+    },
+    "whyFikrat": {
+      "badge": "Why Choose Us",
+      "headlinePart1": "Four reasons to",
+      "headlinePart2": "work with us.",
+      "points": {
+        "market": {
+          "title": "We understand the Algerian market.",
+          "description": "We build for DZD, Chargily, Flexy, and Algerian buyer behavior. Not a Western template adapted for Algeria. A system built here, for here."
+        },
+        "systems": {
+          "title": "We deliver complete systems, not templates.",
+          "description": "Every platform we build is custom to your business logic. Your products, your workflow, your rules — coded specifically for you."
+        },
+        "ownership": {
+          "title": "You own everything.",
+          "description": "Code, database, hosting — it's all yours. No monthly fees to us to keep your platform alive. No lock-in of any kind."
+        },
+        "proof": {
+          "title": "We've already done it.",
+          "description": "Paradise Game DZ is live. We didn't learn on their project — we delivered. You benefit from everything we built and learned."
+        }
+      },
+      "cta": "Book a Free Strategy Call"
+    },
+    "finalCta": {
+      "badge": "Ready to Build?",
+      "headlinePart1": "Ready to build your",
+      "headlinePart2": "digital commerce platform?",
+      "body": "Book a 30-minute strategy call. Tell us about your business. We'll tell you exactly what you need and what it costs. No pitch. No pressure. Just an honest conversation.",
+      "cta": "Book Your Free Strategy Call",
+      "instagram": "Or reach us on Instagram: {handle}"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "What We Build",
+      "headline": "Commerce infrastructure for Algerian digital businesses.",
+      "body": "We don't build generic websites. Every system we build is designed around one specific problem: how does this business sell its products, collect payment, and deliver them — professionally, automatically, and at scale?"
+    },
+    "cta": {
+      "headline": "Need something specific that's not on this list?",
+      "body": "We also build custom software — internal tools, dashboards, SaaS MVPs, and business automation. If you have a specific operational problem, book a call and tell us about it.",
+      "button": "Book a Free Strategy Call"
+    },
+    "items": {
+      "storefront": {
+        "title": "Digital Storefront",
+        "description": "Your store is the first thing your customers see. It needs to be fast, professional, and organized in a way that makes buying obvious.",
+        "features": {
+          "catalog": "Full product catalog with hierarchical categories and subcategories",
+          "search": "Product search and filtering",
+          "variations": "Product pages with multi-level variation trees (up to 3 levels) with independent pricing per variant",
+          "discounts": "Discounts and promotional pricing at the variant level",
+          "featured": "Featured products and category highlights",
+          "dzd": "DZD pricing with proper formatting",
+          "mobile": "Full mobile responsiveness",
+          "seo": "SEO-optimized pages"
+        }
+      },
+      "payment": {
+        "title": "Algerian Payment Integration",
+        "description": "The hardest part of selling online in Algeria isn't building the store. It's accepting payment. We integrate the payment methods your customers already use.",
+        "features": {
+          "chargily": "Chargily — card-based payment processing for Algerian businesses",
+          "flexy": "Flexy — mobile payment workflow",
+          "ccp": "CCP / manual payment — structured workflow where customers submit confirmation, staff verify, and order is fulfilled",
+          "flow": "Complete confirmation and verification flow around each method",
+          "noScreenshots": "No manual screenshots passed through DMs",
+          "traceable": "Every payment traceable inside your admin panel"
+        }
+      },
+      "orders": {
+        "title": "Order Management & Secure Delivery",
+        "description": "An order isn't complete until your customer has their product. We build the full lifecycle — from order creation to delivery confirmation.",
+        "features": {
+          "creation": "Order creation from product flow with status history and timestamps",
+          "staffOrders": "Staff ability to create orders on behalf of customers",
+          "cancellation": "Cancellation with reason tracking",
+          "downloads": "Secure download links with expiry",
+          "licenses": "License key delivery systems",
+          "r2": "File delivery via Cloudflare R2 storage",
+          "email": "Email delivery on order completion",
+          "history": "Customer order history in their account"
+        }
+      },
+      "admin": {
+        "title": "Admin Dashboard & Analytics",
+        "description": "Everything you need to run your business from one screen.",
+        "features": {
+          "crud": "Full CRUD for products, categories, variants, pricing, stock",
+          "orders": "Order management: view, filter, complete, cancel, and create orders",
+          "customers": "Customer management with account status controls",
+          "staff": "Staff management with role-based permissions (Platform tier)",
+          "revenue": "Revenue analytics: daily, weekly, monthly with charts",
+          "insights": "Top-selling products, user activity, and order volume",
+          "chats": "Active chats tracking (Platform tier)"
+        }
+      },
+      "chat": {
+        "title": "Real-Time Staff/Client Chat System",
+        "badge": "Available in Full Platform",
+        "description": "For businesses where customer support is central to fulfillment, we build a complete internal chat system — not a plugin, not a third-party widget. A fully integrated chat system built into your platform.",
+        "features": {
+          "thread": "One persistent chat thread per customer with real-time messaging",
+          "ordering": "Order placement and tracking inside the chat",
+          "attachments": "File attachments — images, video, audio, PDF",
+          "previews": "Link previews and web push notifications",
+          "inbox": "Full staff inbox with folder organization and message search",
+          "info": "Client info panel inside each conversation",
+          "templates": "Quick reply templates",
+          "actions": "Order completion and cancellation directly from chat",
+          "bell": "In-app notification bell for staff and clients"
+        }
+      }
+    }
+  },
+  "packages": {
+    "hero": {
+      "badge": "Pricing",
+      "headline": "Simple, honest pricing.",
+      "body": "Three packages. Each one designed for a specific stage of your business. Every package ships on schedule with a defined scope. No endless projects. No hidden extras."
+    },
+    "pricing": {
+      "viewCards": "Cards",
+      "viewCompare": "Compare",
+      "featureColumn": "Feature",
+      "mostRequested": "Most Requested",
+      "boutique": {
+        "name": "Boutique Store",
+        "tag": "For solo creators & small sellers",
+        "examples": "Ebook sellers, digital file stores, small gaming accounts.",
+        "price": "60,000 DZD",
+        "timeline": "2–3 weeks",
+        "features": {
+          "storefront": "Professional storefront (up to 20 products)",
+          "categories": "Product categories (up to 5)",
+          "payment": "Chargily or Flexy payment integration",
+          "ccp": "Manual payment (CCP) confirmation workflow",
+          "delivery": "Secure download delivery",
+          "email": "Customer email notifications on order completion",
+          "admin": "Basic admin panel: product and order management",
+          "mobile": "Mobile-responsive design",
+          "seo": "SEO basics: title, description, sitemap",
+          "training": "Admin training session (1 hour)",
+          "support": "30 days post-launch support"
+        },
+        "notIncluded": "Customer accounts, product variations, chat system, analytics dashboard."
+      },
+      "commerce": {
+        "name": "Commerce System",
+        "tag": "For growing stores",
+        "examples": "Gaming stores, course platforms, subscription product sellers.",
+        "price": "120,000 DZD",
+        "timeline": "4–6 weeks",
+        "features": {
+          "includes": "Everything in Boutique Store, plus:",
+          "products": "Unlimited products and categories (hierarchical)",
+          "variations": "Product variation trees (up to 2 levels) with independent pricing",
+          "discounts": "Discount configuration per variant",
+          "accounts": "Customer accounts — registration, login, order history",
+          "tracking": "Order status tracking visible to customers",
+          "chat": "Chat-integrated ordering flow",
+          "analytics": "Basic analytics dashboard",
+          "oauth": "Google OAuth login option",
+          "support": "60 days post-launch support"
+        },
+        "notIncluded": "Real-time staff inbox, role-based permissions, RTL/bilingual, push notifications."
+      },
+      "platform": {
+        "name": "Full Platform",
+        "tag": "For established operations",
+        "examples": "Businesses similar to Paradise Game DZ.",
+        "price": "250,000 DZD",
+        "timeline": "8–12 weeks",
+        "features": {
+          "includes": "Everything in Commerce System, plus:",
+          "variations": "Product variation trees up to 3 levels",
+          "chat": "Real-time staff/client chat system",
+          "inbox": "Full staff inbox with folder organization and search",
+          "attachments": "File attachments in chat (images, video, audio, PDF)",
+          "roles": "Role-based access control — Client, Moderator, Admin",
+          "permissions": "Per-module permissions for Moderators",
+          "notifications": "In-app notification bell + web push notifications",
+          "bilingual": "Bilingual (Arabic + French) with full RTL support",
+          "theme": "Dark and light mode",
+          "pwa": "Progressive Web App (PWA)",
+          "analytics": "Full revenue analytics with charts",
+          "otp": "Email OTP auth with Law 18-07 consent",
+          "oauth": "Google and Facebook OAuth",
+          "training": "Admin training session (2 hours + documentation)",
+          "support": "90 days post-launch support"
+        }
+      },
+      "compare": {
+        "products": "Products",
+        "categories": "Categories",
+        "variations": "Product variations",
+        "accounts": "Customer accounts",
+        "chatOrders": "Chat-integrated orders",
+        "inbox": "Real-time staff inbox",
+        "roles": "Role-based permissions",
+        "analytics": "Analytics dashboard",
+        "bilingual": "Bilingual + RTL",
+        "push": "Push notifications",
+        "pwa": "PWA",
+        "support": "Post-launch support",
+        "productsBoutique": "Up to 20",
+        "productsUnlimited": "Unlimited",
+        "categoriesBoutique": "Up to 5",
+        "categoriesUnlimited": "Unlimited (hierarchical)",
+        "variations2": "2 levels",
+        "variations3": "3 levels",
+        "analyticsBasic": "Basic",
+        "analyticsFull": "Full",
+        "support30": "30 days",
+        "support60": "60 days",
+        "support90": "90 days"
+      }
+    },
+    "maintenance": {
+      "headline": "Keep Your Platform Running",
+      "body": "After your support period ends, continue with a monthly maintenance plan.",
+      "askLink": "Ask about maintenance plans during your strategy call →",
+      "basic": {
+        "name": "Basic",
+        "price": "10,000 DZD/month",
+        "features": {
+          "bugs": "Bug fixes and small updates",
+          "security": "Security patches",
+          "hosting": "Hosting monitoring"
+        }
+      },
+      "standard": {
+        "name": "Standard",
+        "price": "20,000 DZD/month",
+        "features": {
+          "includes": "Everything in Basic, plus:",
+          "products": "New product additions (up to 10/month)",
+          "content": "Content updates",
+          "check": "Monthly performance check"
+        }
+      },
+      "priority": {
+        "name": "Priority",
+        "price": "35,000 DZD/month",
+        "features": {
+          "includes": "Everything in Standard, plus:",
+          "response": "Priority response (same business day)",
+          "features": "Small feature additions each month",
+          "call": "Monthly video call for roadmap planning"
+        }
+      }
+    },
+    "faq": {
+      "headline": "Common Questions",
+      "items": {
+        "upgrade": {
+          "q": "Can I upgrade from one package to another later?",
+          "a": "Yes. We build everything with clean architecture. Upgrading to a higher tier is a defined scope of additional work, not a full rebuild."
+        },
+        "prices": {
+          "q": "Are the prices fixed?",
+          "a": "Prices listed are starting prices. The final price depends on your specific requirements and scope. We'll confirm the exact price in your proposal after the strategy call."
+        },
+        "custom": {
+          "q": "Can I add features that aren't in any package?",
+          "a": "Yes. Custom features are quoted separately and added to your scope. We'll discuss them during the strategy call."
+        },
+        "ownership": {
+          "q": "What does \"you own all the code\" mean exactly?",
+          "a": "At delivery, you receive full access to the source code, the database, and the hosting. Fikrat DZ has no ongoing technical control over your platform. You can hire any developer to maintain it. There is no lock-in."
+        },
+        "outside": {
+          "q": "Do you work with clients outside Algeria?",
+          "a": "Currently our primary focus is the Algerian market. If your business is based outside Algeria but targets Algerian customers, reach out and we'll evaluate."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Not sure which package is right for you?",
+      "body": "Book a free 30-minute call. Tell us what you sell, how many products you have, and how you work today. We'll tell you exactly which package fits — or if you need something custom.",
+      "button": "Book Your Free Strategy Call"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "About Fikrat DZ",
+      "headline": "We build Algeria's digital commerce infrastructure.",
+      "body": "Fikrat DZ is a software agency based in Algeria, specialized in building complete digital commerce platforms for businesses selling products online."
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "headline": "Why Fikrat DZ exists.",
+      "p1": "Most Algerian businesses selling digital products online are running on workflows that weren't designed to scale. Orders through Facebook DMs. Payments confirmed via CCP screenshots. Delivery handled manually, one customer at a time.",
+      "p2": "This isn't a technology problem. The technology exists. It's a local implementation problem — most software solutions aren't built around Algerian payment systems, Algerian buyer behavior, or the operational realities of running a business here.",
+      "p3": "Fikrat DZ exists to fix that.",
+      "p4": "We build the systems that let Algerian businesses sell professional online — with Algerian payment integration, real order management, and infrastructure that works the way your business actually works.",
+      "p5": "We don't build generic websites. We don't use templates. Every platform we ship is built around your specific products, your workflow, and your customers."
+    },
+    "proof": {
+      "eyebrow": "Proof",
+      "headline": "We've already built it.",
+      "p1": "Our first project was Paradise Game DZ — one of Algeria's top gaming and mobile-services businesses, with over 50,000 Facebook followers and an active customer base.",
+      "p2": "We replaced their entire manual ordering workflow with a complete digital commerce platform.",
+      "p3": "It's live. It's processing real orders. It works.",
+      "p4": "Every project we take on becomes the proof that what we build is real — not a concept, not a prototype.",
+      "cta": "Read the Case Study",
+      "sidebarEyebrow": "What we built for them",
+      "deliverables": {
+        "chat": "Real-time chat system (Supabase Broadcast)",
+        "storefront": "Bilingual storefront with full RTL support",
+        "admin": "Full admin panel with role-based permissions",
+        "payment": "Algerian payment integration (Chargily, Flexy, CCP)"
+      },
+      "status": "Live and processing real orders"
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "headline": "Where we're going.",
+      "p1": "Our long-term vision is to become the reference for digital commerce infrastructure in Algeria.",
+      "p2": "Not just as an agency — but as a product company. Every problem we solve for our clients is a signal about what Algerian digital businesses need. The best solutions we build will become SaaS products that any Algerian seller can access.",
+      "p3": "We're building toward that, one platform at a time."
+    },
+    "values": {
+      "eyebrow": "How We Work",
+      "headline": "Our Principles",
+      "build": {
+        "title": "What we build",
+        "description": "Systems, not pages. Infrastructure, not templates."
+      },
+      "clients": {
+        "title": "Who we work with",
+        "description": "Businesses with real products, real customers, and a real operational problem to solve."
+      },
+      "dont": {
+        "title": "What we don't do",
+        "description": "Compete on price. Accept every client. Build one-off solutions when a reusable system is possible."
+      }
+    },
+    "cta": {
+      "headline": "Ready to work together?",
+      "body": "Book a free 30-minute strategy call. No pitch. No pressure. Just an honest conversation about your business.",
+      "button": "Book a Free Strategy Call"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Get In Touch",
+      "headline": "Let's build something real.",
+      "body": "Book a 30-minute strategy call. Tell us about your business. We'll tell you exactly what you need and what it costs. No pitch. No pressure."
+    },
+    "options": {
+      "strategy": {
+        "title": "Strategy Call (Free · 30 min)",
+        "badge": "Best to start",
+        "body": "The best place to start. We'll understand your business, your products, and your workflow. You'll leave with clarity on what you need and what it costs.",
+        "cta": "Chat on WhatsApp"
+      },
+      "email": {
+        "title": "Email Us",
+        "body": "For detailed questions or if you'd like to send us background before a call."
+      },
+      "instagram": {
+        "title": "Instagram",
+        "body": "Follow our work and send us a DM."
+      }
+    },
+    "faq": {
+      "headline": "Quick Answers",
+      "items": {
+        "response": {
+          "q": "How quickly do you respond?",
+          "a": "Within 24 hours on business days."
+        },
+        "prepare": {
+          "q": "Do I need to prepare anything for the strategy call?",
+          "a": "No. Just know roughly what products you sell and how you handle orders today. We'll take it from there."
+        },
+        "based": {
+          "q": "Where are you based?",
+          "a": "Algeria. We work with clients across the country."
+        }
+      }
+    }
+  },
+  "work": {
+    "hero": {
+      "badge": "Our Work",
+      "headline": "Our Work",
+      "body": "Every project we take on solves a real problem for a real business. Here's the proof."
+    },
+    "grid": {
+      "paradise": {
+        "category": "Digital Commerce Platform",
+        "client": "Paradise Game DZ",
+        "stat": "50,000+ followers",
+        "tags": {
+          "storefront": "Storefront",
+          "chat": "Chat System",
+          "admin": "Admin Panel",
+          "chargily": "Chargily",
+          "rtl": "RTL"
+        },
+        "teaser": "Replaced a fully manual order workflow with a complete digital commerce platform for one of Algeria's top gaming stores.",
+        "cta": "Read Case Study"
+      },
+      "comingSoon": "More projects coming soon",
+      "inProgress": "Currently in progress"
+    }
+  },
+  "caseStudy": {
+    "paradise": {
+      "hero": {
+        "badge": "Case Study",
+        "headline": "Paradise Game DZ — From Manual Ordering to a Complete Digital Commerce Platform",
+        "meta": {
+          "clientLabel": "Client",
+          "clientValue": "Paradise Game DZ",
+          "industryLabel": "Industry",
+          "industryValue": "Gaming & Mobile Services — Algeria",
+          "communityLabel": "Community",
+          "communityValue": "50,000+ Facebook followers",
+          "deliverableLabel": "Deliverable",
+          "deliverableValue": "Full digital commerce platform"
+        }
+      },
+      "overview": {
+        "clientTitle": "The Client",
+        "clientBody": "Paradise Game DZ is one of Algeria's established gaming and mobile-services businesses. With over 50,000 followers on Facebook and an active, loyal customer base, they had clear market presence and consistent demand for their products.",
+        "problemTitle": "The Problem",
+        "problemBody": "Despite strong demand, their fulfillment workflow was entirely manual. Customers browsed products on social media, then placed orders through live chat with staff. Payments were collected via CCP or Flexy and confirmed manually. Staff delivered products one by one through the same chat thread. This worked — until it didn't. As the customer base grew, the manual process created delays, errors, and a customer experience that didn't match the professionalism of the brand.",
+        "goalTitle": "The Goal",
+        "goals": {
+          "storefront": "Give customers a professional storefront to browse and order from",
+          "payment": "Integrate Algerian payment methods without friction",
+          "orders": "Centralize order management for the team",
+          "chat": "Keep the chat-based relationship they'd built with their customers — but make it organized and scalable",
+          "visibility": "Give management visibility into revenue, orders, and activity"
+        }
+      },
+      "solution": {
+        "eyebrow": "What We Built",
+        "headline": "The Solution",
+        "items": {
+          "storefront": {
+            "title": "Bilingual Storefront (Arabic / French)",
+            "summary": "Fully responsive with RTL support for Arabic and LTR for French — both fully functional with a language toggle. Dark and light mode across the entire public site.",
+            "details": {
+              "rtl": "Full RTL layout for Arabic with proper text alignment and direction",
+              "toggle": "Language toggle available on all pages",
+              "theme": "Dark and light mode across storefront and admin panel",
+              "mobile": "Mobile-first responsive design"
+            }
+          },
+          "catalog": {
+            "title": "Product Catalog with Variation Trees",
+            "summary": "Products organized into parent categories and subcategories. Each product supports a variation tree up to 3 levels deep with independent pricing per variant.",
+            "details": {
+              "categories": "Hierarchical categories with unlimited depth",
+              "trees": "Variation trees: e.g. game type → duration → tier (up to 3 levels)",
+              "pricing": "Independent price, discount, and stock per leaf-level variant",
+              "dzd": "DZD pricing with proper formatting",
+              "featured": "Featured products and category highlights"
+            }
+          },
+          "orders": {
+            "title": "Chat-Integrated Order System",
+            "summary": "Customers browse, select product variations, see the final price, and submit an order — which automatically opens or continues their support chat with staff.",
+            "details": {
+              "flow": "Seamless flow from product selection to order submission",
+              "thread": "Order automatically opens or continues customer's chat thread",
+              "status": "Real-time order status updates posted inside the chat",
+              "coherent": "One coherent flow from browsing to fulfillment"
+            }
+          },
+          "chat": {
+            "title": "Real-Time Staff Chat System",
+            "summary": "A fully integrated chat system for the operations team — not a plugin, not a third-party widget.",
+            "details": {
+              "thread": "One persistent chat thread per customer with real-time messaging (Supabase Broadcast)",
+              "inbox": "Full inbox with folder organization and message search",
+              "profile": "Customer profile panel inside each conversation",
+              "attachments": "File attachments: images, video, audio, PDF via Cloudflare R2",
+              "templates": "Link previews and quick reply templates",
+              "actions": "Order completion and cancellation directly from chat"
+            }
+          },
+          "notifications": {
+            "title": "Notification System",
+            "summary": "In-app notification bell and web push notifications for both staff and clients.",
+            "details": {
+              "staff": "In-app bell for staff: new messages and new orders",
+              "clients": "In-app bell for clients: unread chat updates",
+              "push": "Web push notifications for order status changes and new activity",
+              "permissions": "Permission controls in the navbar"
+            }
+          },
+          "admin": {
+            "title": "Admin Back Office",
+            "summary": "A complete management panel for products, orders, customers, and revenue.",
+            "details": {
+              "products": "Product and category management with images",
+              "orders": "Order management: list, create, complete, cancel, delete",
+              "customers": "Customer management with account status controls",
+              "revenue": "Revenue dashboard with charts: top products, user activity, time-based analytics"
+            }
+          },
+          "roles": {
+            "title": "Role-Based Access Control",
+            "summary": "Three roles with granular per-module permissions.",
+            "details": {
+              "roles": "Three roles: Client, Moderator, Admin",
+              "moderators": "Moderators: per-module permissions (view, add, update, delete) across users, products, categories, orders, and chats",
+              "admins": "Admins: full role and permission assignment",
+              "routing": "Staff routed directly to admin panel on login"
+            }
+          },
+          "auth": {
+            "title": "Authentication & Additional",
+            "summary": "Full authentication system with OAuth support and progressive web app capabilities.",
+            "details": {
+              "otp": "Email OTP signup with Law 18-07 data consent",
+              "login": "Email/password login, Google and Facebook OAuth",
+              "reset": "Password reset and client profile settings",
+              "pwa": "PWA manifest for mobile installation",
+              "seo": "Full SEO: metadata and sitemap",
+              "mobile": "Responsive mobile layout across all views"
+            }
+          }
+        }
+      },
+      "result": {
+        "eyebrow": "The Outcome",
+        "headline": "The Result",
+        "p1": "Paradise Game DZ now has a complete operational platform — one that matches the professionalism of their brand and community, handles their full order volume, and gives management real visibility into what's happening in the business.",
+        "p2": "The manual DM ordering workflow is gone. Staff work from a single organized inbox. Orders are tracked. Revenue is visible. The customer experience is professional.",
+        "metrics": {
+          "orderVolume": "Order Volume",
+          "timeSaved": "Time Saved",
+          "activeUsers": "Active Users"
+        },
+        "metricsNote": "Metrics to be added when available.",
+        "testimonial": "Client testimonial will appear here once received from Paradise Game DZ.",
+        "attribution": "Paradise Game DZ",
+        "role": "Owner"
+      },
+      "cta": {
+        "headline": "Need something like this?",
+        "body": "This is our Full Platform tier. If your business has similar requirements — or if you want to start smaller and grow into this — book a call and let's talk.",
+        "button": "Book a Free Strategy Call"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "fr": "FR",
+    "ar": "AR"
+  }
+}

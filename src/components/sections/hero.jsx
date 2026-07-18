@@ -109,7 +109,7 @@ const Hero = () => {
             Every Idea Deserves to be Real
           </motion.div>
 
-          {/* Main Headline */}
+          {/* Main Headline */} 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

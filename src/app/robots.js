@@ -5,7 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: [],
     },
-    sitemap: 'https://fikrat.tech/sitemap.xml',
+    sitemap: 'https://fikratdz.tech/sitemap.xml',
   }
 }
-
