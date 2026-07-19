@@ -34,7 +34,7 @@ const CaseStudyResult = () => {
             </p>
 
             {/* Metrics placeholder */}
-            <div className="grid grid-cols-3 gap-4">
+            {/* <div className="grid grid-cols-3 gap-4">
               {metrics.map((metric, i) => (
                 <div key={i} className="bg-primary/5 border border-primary-light/15 rounded-xl p-4 text-center">
                   <div className="text-xl font-bold text-secondary mb-1">—</div>
@@ -42,7 +42,7 @@ const CaseStudyResult = () => {
                 </div>
               ))}
             </div>
-            <p className="text-theme-tertiary text-xs mt-3">{t('metricsNote')}</p>
+            <p className="text-theme-tertiary text-xs mt-3">{t('metricsNote')}</p> */}
           </motion.div>
 
           {/* Testimonial placeholder */}

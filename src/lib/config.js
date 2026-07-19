@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   instagram: '@fikratdz',
   instagramUrl: 'https://www.instagram.com/fikratdz',
   whatsapp: {
-    number: '213XXXXXXXXX', // Replace with real number (no + or spaces)
+    number: '213696458600', // Replace with real number (no + or spaces)
     baseUrl: 'https://wa.me/',
   },
 }

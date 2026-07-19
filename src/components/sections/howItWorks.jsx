@@ -147,15 +147,6 @@ const HowItWorks = () => {
               Works
             </motion.span>
           </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base sm:text-lg lg:text-xl text-[#ab9eba] max-w-3xl mx-auto leading-relaxed px-2"
-          >
-            Remove friction; show transparent steps. From vision to reality in four simple phases.
-          </motion.p>
         </motion.div>
 
         {/* Steps Grid */}
