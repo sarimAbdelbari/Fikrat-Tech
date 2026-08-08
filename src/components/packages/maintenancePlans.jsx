@@ -84,9 +84,13 @@ const MaintenancePlans = () => {
               )}
 
               <h3 className="text-lg font-bold text-theme-primary mb-1">{plan.name}</h3>
-              <div className="text-xl font-bold text-gradient-accent mb-5">
-                {plan.price}
-              </div>
+              {plan.price ? (
+                <div className="text-xl font-bold text-gradient-accent mb-5">
+                  {plan.price}
+                </div>
+              ) : (
+                <div className="mb-5" />
+              )}
 
               <ul className="space-y-2.5 flex-1">
                 {plan.features.map((feature, i) => {

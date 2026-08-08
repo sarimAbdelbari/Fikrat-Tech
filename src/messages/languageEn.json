@@ -28,8 +28,8 @@
       "description": "Book a free 30-minute strategy call with Fikrat DZ. Tell us about your business — we'll tell you exactly what you need and what it costs. No pitch, no pressure."
     },
     "packages": {
-      "title": "Packages & Pricing",
-      "description": "Three packages for Algerian digital businesses. Boutique Store from 60,000 DZD, Commerce System from 120,000 DZD, Full Platform from 250,000 DZD. Every package ships. No scope creep."
+      "title": "Packages",
+      "description": "Three packages for Algerian digital businesses — Boutique Store, Commerce System, and Full Platform. Every package ships. No scope creep."
     },
     "services": {
       "title": "Services",
@@ -70,15 +70,15 @@
   },
   "whatsapp": {
     "generic": "Hello Fikrat DZ, I'd like to discuss a project.",
-    "boutique": "Hello, I'm interested in the Boutique Store package (60,000 DZD).",
-    "commerce": "Hello, I'm interested in the Commerce System package (120,000 DZD).",
-    "platform": "Hello, I'm interested in the Full Platform package (250,000 DZD).",
+    "boutique": "Hello, I'm interested in the Boutique Store package.",
+    "commerce": "Hello, I'm interested in the Commerce System package.",
+    "platform": "Hello, I'm interested in the Full Platform package.",
     "services": "Hello, I have a question about your services.",
     "caseStudy": "Hello, I'd like something similar to what you built for Paradise Game DZ.",
     "contact": "Hello Fikrat DZ, I'd like to discuss my project."
   },
   "common": {
-    "timelineLabel": "Timeline:",
+    "timelineLabel": "",
     "getStarted": "Get Started",
     "notIncluded": "Not included:",
     "allPackagesInclude": "All packages include: SEO setup · Mobile-responsive · Admin training · You own all the code.",
@@ -172,7 +172,7 @@
       "worksNote": "It works."
     },
     "packagesPreview": {
-      "badge": "Pricing",
+      "badge": "Packages",
       "headlinePart1": "Three packages.",
       "headlinePart2": "One right one",
       "headlinePart3": "for you.",
@@ -182,8 +182,8 @@
       "boutique": {
         "name": "Boutique Store",
         "tag": "For solo creators & small sellers",
-        "price": "60,000 DZD",
-        "timeline": "2–3 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "products": "Up to 20 products",
           "payment": "Chargily or Flexy payment",
@@ -195,8 +195,8 @@
       "commerce": {
         "name": "Commerce System",
         "tag": "For growing stores",
-        "price": "120,000 DZD",
-        "timeline": "4–6 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "products": "Unlimited products & categories",
           "variations": "Product variations with pricing",
@@ -209,8 +209,8 @@
       "platform": {
         "name": "Full Platform",
         "tag": "For established operations",
-        "price": "250,000 DZD",
-        "timeline": "8–12 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "chat": "Real-time staff/client chat",
           "roles": "Role-based admin permissions",
@@ -368,8 +368,8 @@
   },
   "packages": {
     "hero": {
-      "badge": "Pricing",
-      "headline": "Simple, honest pricing.",
+      "badge": "Packages",
+      "headline": "Simple, honest packages.",
       "body": "Three packages. Each one designed for a specific stage of your business. Every package ships on schedule with a defined scope. No endless projects. No hidden extras."
     },
     "pricing": {
@@ -381,8 +381,8 @@
         "name": "Boutique Store",
         "tag": "For solo creators & small sellers",
         "examples": "Ebook sellers, digital file stores, small gaming accounts.",
-        "price": "60,000 DZD",
-        "timeline": "2–3 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "storefront": "Professional storefront (up to 20 products)",
           "categories": "Product categories (up to 5)",
@@ -402,8 +402,8 @@
         "name": "Commerce System",
         "tag": "For growing stores",
         "examples": "Gaming stores, course platforms, subscription product sellers.",
-        "price": "120,000 DZD",
-        "timeline": "4–6 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "includes": "Everything in Boutique Store, plus:",
           "products": "Unlimited products and categories (hierarchical)",
@@ -422,8 +422,8 @@
         "name": "Full Platform",
         "tag": "For established operations",
         "examples": "Businesses similar to Paradise Game DZ.",
-        "price": "250,000 DZD",
-        "timeline": "8–12 weeks",
+        "price": "",
+        "timeline": "",
         "features": {
           "includes": "Everything in Commerce System, plus:",
           "variations": "Product variation trees up to 3 levels",
@@ -475,7 +475,7 @@
       "askLink": "Ask about maintenance plans during your strategy call →",
       "basic": {
         "name": "Basic",
-        "price": "10,000 DZD/month",
+        "price": "",
         "features": {
           "bugs": "Bug fixes and small updates",
           "security": "Security patches",
@@ -484,7 +484,7 @@
       },
       "standard": {
         "name": "Standard",
-        "price": "20,000 DZD/month",
+        "price": "",
         "features": {
           "includes": "Everything in Basic, plus:",
           "products": "New product additions (up to 10/month)",
@@ -494,7 +494,7 @@
       },
       "priority": {
         "name": "Priority",
-        "price": "35,000 DZD/month",
+        "price": "",
         "features": {
           "includes": "Everything in Standard, plus:",
           "response": "Priority response (same business day)",
@@ -511,8 +511,8 @@
           "a": "Yes. We build everything with clean architecture. Upgrading to a higher tier is a defined scope of additional work, not a full rebuild."
         },
         "prices": {
-          "q": "Are the prices fixed?",
-          "a": "Prices listed are starting prices. The final price depends on your specific requirements and scope. We'll confirm the exact price in your proposal after the strategy call."
+          "q": "How do I get a quote?",
+          "a": "Book a free strategy call. We'll review your requirements and share a clear proposal with scope, timeline, and investment — tailored to your project."
         },
         "custom": {
           "q": "Can I add features that aren't in any package?",

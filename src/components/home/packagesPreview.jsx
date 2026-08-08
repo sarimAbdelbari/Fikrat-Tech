@@ -136,10 +136,14 @@ const PackagesPreview = () => {
                 <div className="mb-6">
                   <span className="text-xs text-secondary font-medium uppercase tracking-widest">{pkg.tag}</span>
                   <h3 className="text-xl font-bold text-theme-primary mt-1 mb-1">{pkg.name}</h3>
-                  <div className="text-2xl font-bold text-gradient-accent">
-                    {pkg.price}
-                  </div>
-                  <div className="text-secondary text-sm mt-1">{tCommon('timelineLabel')} {pkg.timeline}</div>
+                  {pkg.price ? (
+                    <div className="text-2xl font-bold text-gradient-accent">
+                      {pkg.price}
+                    </div>
+                  ) : null}
+                  {pkg.timeline ? (
+                    <div className="text-secondary text-sm mt-1">{tCommon('timelineLabel')} {pkg.timeline}</div>
+                  ) : null}
                 </div>
 
                 <ul className="space-y-3 flex-1 mb-8">

@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
@@ -31,10 +32,19 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-2xl font-bold text-theme-primary mb-3 tracking-tight">
-              {t('brandName')}{' '}
-              <span className="text-gradient-accent">{t('brandSuffix')}</span>
-            </div>
+            <Link href="/" className="inline-flex items-center gap-2 mb-3">
+              <Image
+                src="/assets/Fikrat Tech (1).png"
+                alt={tNav('logoAlt')}
+                width={120}
+                height={120}
+                className="w-auto h-auto scale-125 translate-y-1"
+              />
+              {/* <span className="text-2xl font-bold text-theme-primary tracking-tight">
+                {t('brandName')}{' '}
+                <span className="text-gradient-accent">{t('brandSuffix')}</span>
+              </span> */}
+            </Link>
             <p className="text-secondary text-sm leading-relaxed mb-6">{t('tagline')}</p>
             <p className="text-theme-tertiary text-xs">
               {t('copyright', { year: new Date().getFullYear() })}

@@ -185,10 +185,14 @@ const PricingTable = () => {
                       <span className="text-xs text-secondary font-medium uppercase tracking-widest">{pkg.tag}</span>
                       <h3 className="text-xl font-bold text-theme-primary mt-1 mb-1">{pkg.name}</h3>
                       <p className="text-xs text-theme-tertiary mb-3">{pkg.examples}</p>
-                      <div className="text-2xl font-bold text-gradient-accent">
-                        {pkg.price}
-                      </div>
-                      <div className="text-secondary text-sm mt-1">{tCommon('timelineLabel')} {pkg.timeline}</div>
+                      {pkg.price ? (
+                        <div className="text-2xl font-bold text-gradient-accent">
+                          {pkg.price}
+                        </div>
+                      ) : null}
+                      {pkg.timeline ? (
+                        <div className="text-secondary text-sm mt-1">{tCommon('timelineLabel')} {pkg.timeline}</div>
+                      ) : null}
                     </div>
 
                     <ul className="space-y-2.5 flex-1 mb-8">
@@ -248,7 +252,9 @@ const PricingTable = () => {
                     {packages.map((pkg) => (
                       <th key={pkg.name} className="text-center py-4 px-4 min-w-[120px]">
                         <div className={`font-bold text-base ${pkg.featured ? 'text-primary' : 'text-theme-primary'}`}>{pkg.name}</div>
-                        <div className="text-secondary text-xs mt-1">{pkg.price}</div>
+                        {pkg.price ? (
+                          <div className="text-secondary text-xs mt-1">{pkg.price}</div>
+                        ) : null}
                       </th>
                     ))}
                   </tr>

@@ -23,7 +23,7 @@ const CaseStudyResult = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-          >
+          >  
             <div className="text-xs text-theme-primary font-semibold uppercase tracking-widest mb-3">{t('eyebrow')}</div>
             <h2 className="text-3xl sm:text-4xl font-bold text-theme-primary mb-6">{t('headline')}</h2>
             <p className="text-theme-secondary leading-relaxed mb-4">

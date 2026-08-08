@@ -28,8 +28,8 @@
       "description": "Réservez un appel stratégique gratuit de 30 minutes avec Fikrat DZ. Parlez-nous de votre activité — nous vous dirons exactement ce dont vous avez besoin et ce que cela coûte. Pas de pitch, pas de pression."
     },
     "packages": {
-      "title": "Packages & Tarifs",
-      "description": "Trois packages pour les entreprises digitales algériennes. Boutique Store à partir de 60,000 DZD, Commerce System à partir de 120,000 DZD, Full Platform à partir de 250,000 DZD. Chaque package est livré. Pas de dérive de périmètre."
+      "title": "Packages",
+      "description": "Trois packages pour les entreprises digitales algériennes — Boutique Store, Commerce System et Full Platform. Chaque package est livré. Pas de dérive de périmètre."
     },
     "services": {
       "title": "Services",
@@ -70,15 +70,15 @@
   },
   "whatsapp": {
     "generic": "Bonjour Fikrat DZ, je souhaite discuter d'un projet.",
-    "boutique": "Bonjour, je suis intéressé par le package Boutique Store (60,000 DZD).",
-    "commerce": "Bonjour, je suis intéressé par le package Commerce System (120,000 DZD).",
-    "platform": "Bonjour, je suis intéressé par le package Full Platform (250,000 DZD).",
+    "boutique": "Bonjour, je suis intéressé par le package Boutique Store.",
+    "commerce": "Bonjour, je suis intéressé par le package Commerce System.",
+    "platform": "Bonjour, je suis intéressé par le package Full Platform.",
     "services": "Bonjour, j'ai une question concernant vos services.",
     "caseStudy": "Bonjour, je voudrais quelque chose de similaire à ce que vous avez construit pour Paradise Game DZ.",
     "contact": "Bonjour Fikrat DZ, je souhaite discuter de mon projet."
   },
   "common": {
-    "timelineLabel": "Délai :",
+    "timelineLabel": "",
     "getStarted": "Commencer",
     "notIncluded": "Non inclus :",
     "allPackagesInclude": "Tous les packages incluent : configuration SEO · Design responsive · Formation admin · Vous êtes propriétaire de tout le code.",
@@ -172,7 +172,7 @@
       "worksNote": "Ça fonctionne."
     },
     "packagesPreview": {
-      "badge": "Tarifs",
+      "badge": "Packages",
       "headlinePart1": "Trois packages.",
       "headlinePart2": "Celui qu'il vous faut",
       "headlinePart3": "est parmi eux.",
@@ -182,8 +182,8 @@
       "boutique": {
         "name": "Boutique Store",
         "tag": "Pour créateurs solo & petits vendeurs",
-        "price": "60,000 DZD",
-        "timeline": "2–3 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "products": "Jusqu'à 20 produits",
           "payment": "Paiement Chargily ou Flexy",
@@ -195,8 +195,8 @@
       "commerce": {
         "name": "Commerce System",
         "tag": "Pour les boutiques en croissance",
-        "price": "120,000 DZD",
-        "timeline": "4–6 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "products": "Produits & catégories illimités",
           "variations": "Variations produits avec tarification",
@@ -209,8 +209,8 @@
       "platform": {
         "name": "Full Platform",
         "tag": "Pour les opérations établies",
-        "price": "250,000 DZD",
-        "timeline": "8–12 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "chat": "Chat staff/client en temps réel",
           "roles": "Permissions admin basées sur les rôles",
@@ -368,8 +368,8 @@
   },
   "packages": {
     "hero": {
-      "badge": "Tarifs",
-      "headline": "Des tarifs simples et honnêtes.",
+      "badge": "Packages",
+      "headline": "Des packages simples et honnêtes.",
       "body": "Trois packages. Chacun conçu pour une étape précise de votre activité. Chaque package est livré dans les délais avec un périmètre défini. Pas de projets sans fin. Pas de extras cachés."
     },
     "pricing": {
@@ -381,8 +381,8 @@
         "name": "Boutique Store",
         "tag": "Pour créateurs solo & petits vendeurs",
         "examples": "Vendeurs d'ebooks, boutiques de fichiers digitaux, petits comptes gaming.",
-        "price": "60,000 DZD",
-        "timeline": "2–3 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "storefront": "Boutique professionnelle (jusqu'à 20 produits)",
           "categories": "Catégories de produits (jusqu'à 5)",
@@ -402,8 +402,8 @@
         "name": "Commerce System",
         "tag": "Pour les boutiques en croissance",
         "examples": "Boutiques gaming, plateformes de cours, vendeurs de produits par abonnement.",
-        "price": "120,000 DZD",
-        "timeline": "4–6 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "includes": "Tout ce qui est dans Boutique Store, plus :",
           "products": "Produits et catégories illimités (hiérarchiques)",
@@ -422,8 +422,8 @@
         "name": "Full Platform",
         "tag": "Pour les opérations établies",
         "examples": "Entreprises similaires à Paradise Game DZ.",
-        "price": "250,000 DZD",
-        "timeline": "8–12 semaines",
+        "price": "",
+        "timeline": "",
         "features": {
           "includes": "Tout ce qui est dans Commerce System, plus :",
           "variations": "Arbres de variations produits jusqu'à 3 niveaux",
@@ -475,7 +475,7 @@
       "askLink": "Demandez les plans de maintenance lors de votre appel stratégique →",
       "basic": {
         "name": "Basique",
-        "price": "10,000 DZD/mois",
+        "price": "",
         "features": {
           "bugs": "Corrections de bugs et petites mises à jour",
           "security": "Correctifs de sécurité",
@@ -484,7 +484,7 @@
       },
       "standard": {
         "name": "Standard",
-        "price": "20,000 DZD/mois",
+        "price": "",
         "features": {
           "includes": "Tout ce qui est dans Basique, plus :",
           "products": "Ajouts de nouveaux produits (jusqu'à 10/mois)",
@@ -494,7 +494,7 @@
       },
       "priority": {
         "name": "Priorité",
-        "price": "35,000 DZD/mois",
+        "price": "",
         "features": {
           "includes": "Tout ce qui est dans Standard, plus :",
           "response": "Réponse prioritaire (même jour ouvré)",
@@ -511,8 +511,8 @@
           "a": "Oui. Nous construisons tout avec une architecture propre. Passer à un niveau supérieur est un périmètre de travail additionnel défini, pas une reconstruction complète."
         },
         "prices": {
-          "q": "Les prix sont-ils fixes ?",
-          "a": "Les prix indiqués sont des prix de départ. Le prix final dépend de vos besoins spécifiques et du périmètre. Nous confirmerons le prix exact dans votre proposition après l'appel stratégique."
+          "q": "Comment obtenir un devis ?",
+          "a": "Réservez un appel stratégique gratuit. Nous examinerons vos besoins et vous enverrons une proposition claire avec le périmètre, le délai et l'investissement — adaptés à votre projet."
         },
         "custom": {
           "q": "Puis-je ajouter des fonctionnalités qui ne sont dans aucun package ?",

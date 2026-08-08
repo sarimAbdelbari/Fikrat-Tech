@@ -21,9 +21,9 @@ export function buildWaLink(message) {
 /** @deprecated Prefer buildWaLink with translated messages from i18n */
 export const WA = {
   generic: buildWaLink("Hello Fikrat DZ, I'd like to discuss a project."),
-  boutique: buildWaLink("Hello, I'm interested in the Boutique Store package (60,000 DZD)."),
-  commerce: buildWaLink("Hello, I'm interested in the Commerce System package (120,000 DZD)."),
-  platform: buildWaLink("Hello, I'm interested in the Full Platform package (250,000 DZD)."),
+  boutique: buildWaLink("Hello, I'm interested in the Boutique Store package."),
+  commerce: buildWaLink("Hello, I'm interested in the Commerce System package."),
+  platform: buildWaLink("Hello, I'm interested in the Full Platform package."),
   services: buildWaLink("Hello, I have a question about your services."),
   caseStudy: buildWaLink("Hello, I'd like something similar to what you built for Paradise Game DZ."),
   contact: buildWaLink("Hello Fikrat DZ, I'd like to discuss my project."),
