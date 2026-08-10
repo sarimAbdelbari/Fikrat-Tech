@@ -260,7 +260,7 @@ All packages include: SEO setup · Mobile-responsive · Admin training · You ow
 
 **Point 3:**
 **Title:** You own everything.
-**Body:** Code, database, hosting — it's all yours. No monthly fees to us to keep your platform alive. No lock-in of any kind.
+**Body:** Analytics, database, hosting it's all yours. No monthly fees to us to keep your platform alive. No lock-in of any kind.
 
 **Point 4:**
 **Title:** We've already done it.
