@@ -8,9 +8,8 @@ import { Link } from '@/i18n/navigation'
 import { buildWaLink } from '@/lib/config'
 
 const HERO_BG = {
-  src: '/assets/FikratBG.jpg',
-  width: 1294,
-  height: 816,
+  desktop: { src: '/assets/FikratBgDesktop.jpg', width: 2752, height: 1536 },
+  mobile: { src: '/assets/FikratBgMobile.jpg', width: 1536, height: 2752 },
 }
 
 const MotionLink = motion.create(Link)
@@ -27,18 +26,29 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background: aspect-ratio cover → overlay → grid */}
+      {/* Background: mobile portrait / desktop landscape, then overlay and grid */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-background">
         <Image
-          src={HERO_BG.src}
+          src={HERO_BG.mobile.src}
           alt=""
-          width={HERO_BG.width}
-          height={HERO_BG.height}
+          width={HERO_BG.mobile.width}
+          height={HERO_BG.mobile.height}
           priority
           sizes="100vw"
           aria-hidden
-          className="pointer-events-none absolute left-1/2 top-1/2 h-auto w-auto min-h-full min-w-full max-w-none -translate-x-1/2 -translate-y-1/2"
-          style={{ aspectRatio: `${HERO_BG.width} / ${HERO_BG.height}` }}
+          className="pointer-events-none absolute left-1/2 top-1/2 h-auto w-auto min-h-full min-w-full max-w-none -translate-x-1/2 -translate-y-1/2 md:hidden"
+          style={{ aspectRatio: `${HERO_BG.mobile.width} / ${HERO_BG.mobile.height}` }}
+        />
+        <Image
+          src={HERO_BG.desktop.src}
+          alt=""
+          width={HERO_BG.desktop.width}
+          height={HERO_BG.desktop.height}
+          priority
+          sizes="100vw"
+          aria-hidden
+          className="pointer-events-none absolute left-1/2 top-1/2 hidden h-auto w-auto min-h-full min-w-full max-w-none -translate-x-1/2 -translate-y-1/2 md:block"
+          style={{ aspectRatio: `${HERO_BG.desktop.width} / ${HERO_BG.desktop.height}` }}
         />
         <div className="absolute inset-0 bg-background/60" aria-hidden />
         <div className="absolute inset-0 bg-grid-pattern" aria-hidden />

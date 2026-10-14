@@ -19,7 +19,7 @@ const PackagesPreview = () => {
       timeline: t('boutique.timeline'),
       waLink: buildWaLink(tWa('boutique')),
       features: [
-        t('boutique.features.products'),
+        t('boutique.features.storefront'),
         t('boutique.features.payment'),
         t('boutique.features.delivery'),
         t('boutique.features.admin'),
@@ -35,11 +35,11 @@ const PackagesPreview = () => {
       timeline: t('commerce.timeline'),
       waLink: buildWaLink(tWa('commerce')),
       features: [
-        t('commerce.features.products'),
-        t('commerce.features.variations'),
         t('commerce.features.accounts'),
+        t('commerce.features.variations'),
         t('commerce.features.chat'),
         t('commerce.features.analytics'),
+        t('commerce.features.oauth'),
         t('commerce.features.support'),
       ],
       featured: true,

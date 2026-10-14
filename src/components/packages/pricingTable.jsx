@@ -21,6 +21,7 @@ const PricingTable = () => {
     {
       name: t('boutique.name'),
       tag: t('boutique.tag'),
+      summary: t('boutique.summary'),
       examples: t('boutique.examples'),
       price: t('boutique.price'),
       timeline: t('boutique.timeline'),
@@ -29,15 +30,10 @@ const PricingTable = () => {
       hasIncludes: false,
       features: Object.values({
         storefront: t('boutique.features.storefront'),
-        categories: t('boutique.features.categories'),
         payment: t('boutique.features.payment'),
-        ccp: t('boutique.features.ccp'),
         delivery: t('boutique.features.delivery'),
-        email: t('boutique.features.email'),
         admin: t('boutique.features.admin'),
         mobile: t('boutique.features.mobile'),
-        seo: t('boutique.features.seo'),
-        training: t('boutique.features.training'),
         support: t('boutique.features.support'),
       }),
       notIncluded: t('boutique.notIncluded'),
@@ -46,6 +42,7 @@ const PricingTable = () => {
     {
       name: t('commerce.name'),
       tag: t('commerce.tag'),
+      summary: t('commerce.summary'),
       badge: t('mostRequested'),
       examples: t('commerce.examples'),
       price: t('commerce.price'),
@@ -55,11 +52,9 @@ const PricingTable = () => {
       hasIncludes: true,
       features: Object.values({
         includes: t('commerce.features.includes'),
-        products: t('commerce.features.products'),
+        accounts: t('commerce.features.accounts'),
         variations: t('commerce.features.variations'),
         discounts: t('commerce.features.discounts'),
-        accounts: t('commerce.features.accounts'),
-        tracking: t('commerce.features.tracking'),
         chat: t('commerce.features.chat'),
         analytics: t('commerce.features.analytics'),
         oauth: t('commerce.features.oauth'),
@@ -71,6 +66,7 @@ const PricingTable = () => {
     {
       name: t('platform.name'),
       tag: t('platform.tag'),
+      summary: t('platform.summary'),
       examples: t('platform.examples'),
       price: t('platform.price'),
       timeline: t('platform.timeline'),
@@ -79,7 +75,6 @@ const PricingTable = () => {
       hasIncludes: true,
       features: Object.values({
         includes: t('platform.features.includes'),
-        variations: t('platform.features.variations'),
         chat: t('platform.features.chat'),
         inbox: t('platform.features.inbox'),
         attachments: t('platform.features.attachments'),
@@ -100,9 +95,7 @@ const PricingTable = () => {
   ]
 
   const comparisonFeatures = [
-    { name: t('compare.products'), boutique: t('compare.productsBoutique'), commerce: t('compare.productsUnlimited'), platform: t('compare.productsUnlimited') },
-    { name: t('compare.categories'), boutique: t('compare.categoriesBoutique'), commerce: t('compare.categoriesUnlimited'), platform: t('compare.categoriesUnlimited') },
-    { name: t('compare.variations'), boutique: false, commerce: t('compare.variations2'), platform: t('compare.variations3') },
+    { name: t('compare.variations'), boutique: false, commerce: true, platform: true },
     { name: t('compare.accounts'), boutique: false, commerce: true, platform: true },
     { name: t('compare.chatOrders'), boutique: false, commerce: true, platform: true },
     { name: t('compare.inbox'), boutique: false, commerce: false, platform: true },
@@ -183,7 +176,8 @@ const PricingTable = () => {
                   <div className="p-7 flex flex-col flex-1">
                     <div className="mb-6">
                       <span className="text-xs text-secondary font-medium uppercase tracking-widest">{pkg.tag}</span>
-                      <h3 className="text-xl font-bold text-theme-primary mt-1 mb-1">{pkg.name}</h3>
+                      <h3 className="text-xl font-bold text-theme-primary mt-1 mb-2">{pkg.name}</h3>
+                      <p className="text-sm text-theme-secondary leading-relaxed mb-3">{pkg.summary}</p>
                       <p className="text-xs text-theme-tertiary mb-3">{pkg.examples}</p>
                       {pkg.price ? (
                         <div className="text-2xl font-bold text-gradient-accent">
